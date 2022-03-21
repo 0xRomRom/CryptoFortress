@@ -7,11 +7,10 @@ What's poppin gangsta's, this will be our readme for the project. I'll start by 
 
 
 ////// Content ideas ///////
-++Market updates (feed)
+++Crypto market news (feed)
 ++Crypto tutorials
 ++Content/Project review
-++Quick links section for main crypto operations / Best exchanges (ref links ;d)
-++Calculators (need to think of useful stuff)
-++ ''Join our community" section
+++Quick links section for main crypto operations / Best exchanges (ref links $$)
+++ About us/ ''Join our community" section
 
 
