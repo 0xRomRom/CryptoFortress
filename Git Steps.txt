@@ -1,0 +1,19 @@
+Cloning the main repo & pushing new files to it.
+
+1. Create a directory to pull the repo to (i.e. C:\Users\RS\Desktop\Crypto Fortress>)
+2. Open your IDE, open ^ directory in IDE.
+3. Open terminal in IDE, input: git clone https://github.com/0xRomRom/CryptoFortress.git
+4. Repo will be cloned into the folder from step 1.
+5. In the terminal, input: cd <name of step 1 folder>
+
+Now working in the CF repo!
+
+When committing make sure to be in the correct path (i.e. C:\Users\RS\Desktop\Crypto Fortress\CryptoFortress>), the one
+we worked towards in step 5.
+
+To commit: 
+
+In the terminal:
+1. git add .                         //(Adds all files in the current directory to the staging area)
+2. git commit -m "message here"      //(Commits the files to the local repo)
+3. git push                          //(Pushes the local repo into the live repo)
