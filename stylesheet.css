@@ -1,0 +1,121 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/* Setting defaults */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+/* |Front page| Nav-bar Section Start*/
+
+.nav-section {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem, 10%;
+}
+
+.nav-section > img,
+nav,
+a,
+button {
+  cursor: pointer;
+}
+
+li,
+a,
+button {
+  font-family: "Mont-serrat", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.cflogo {
+  margin: 0rem 0rem 0rem 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0rem 7.55rem;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #dc1fff;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ffa3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+button {
+  padding: 0.9rem 2.5rem;
+  margin: 0rem 1.5rem 0rem 0rem;
+  color: black;
+  border: transparent;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #00ffa3, #dc1fff);
+  background-size: 48%;
+  background-clip: padding-box;
+  background-repeat: repeat-y;
+  animation: AnimationName 2s ease infinite;
+  transition: all 1s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(to right, #00ffa3, #dc1fff);
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* |Front page| Nav-bar Section End */
+
+/* |Front page| Header Start */
