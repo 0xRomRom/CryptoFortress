@@ -1,5 +1,5 @@
 # CryptoFortress
-# www.cryptofortress.netlify.app
+# https://cryptofortress.netlify.app/
 
 Crypto Fortress's Codebase
 
