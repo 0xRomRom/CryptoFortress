@@ -22,12 +22,18 @@ header {
 }
 
 .nav-section {
+  position: fixed;
   width: 100vw;
   background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.6rem, 10%;
+  z-index: 10000;
+}
+
+.nav-section.sticky {
+  opacity: 0.8;
 }
 
 .nav-section > img,
@@ -129,6 +135,7 @@ button:hover {
 /* |Front page| Header Start */
 
 .main-header {
+  height: 100vh;
   /* Div to prevent background from stretching over full height */
 }
 
@@ -178,6 +185,8 @@ button:hover {
   font-size: 6rem;
 }
 
+/* To be moved elsewhere */
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -196,14 +205,12 @@ button:hover {
 
 @media (max-width: 1600px) {
   .nav-links li {
-    display: inline-block;
     padding: 0rem 4.55rem;
   }
 }
 
 @media (max-width: 1300px) {
   .nav-links li {
-    display: inline-block;
     padding: 0rem 2.55rem;
   }
 }
@@ -255,5 +262,8 @@ button:hover {
   }
   .cflogo {
     width: 7rem;
+  }
+  .nav-section.sticky {
+    opacity: 1;
   }
 }
