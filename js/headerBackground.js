@@ -10,10 +10,3 @@ VANTA.NET({
   color: 0xd43aeb,
   backgroundColor: 0x0,
 });
-
-var docWidth = document.documentElement.offsetWidth;
-[].forEach.call(document.querySelectorAll("*"), function (el) {
-  if (el.offsetWidth > docWidth) {
-    console.log(el);
-  }
-});

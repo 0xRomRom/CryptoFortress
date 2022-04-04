@@ -267,3 +267,28 @@ button:hover {
     opacity: 1;
   }
 }
+
+@media (max-width: 450px) {
+  .header-text {
+    font-size: 9rem;
+    top: -5rem;
+    left: 2%;
+  }
+  .header-subtext {
+    font-size: 4rem;
+    left: 4%;
+  }
+}
+
+@media (max-width: 380px) {
+  .header-text {
+    font-size: 7rem;
+    top: -15rem;
+    left: 6%;
+  }
+  .header-subtext {
+    font-size: 3rem;
+    top: -10%;
+    left: 6%;
+  }
+}
