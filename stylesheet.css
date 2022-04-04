@@ -15,6 +15,15 @@ html {
   /* 1rem = 10px */
 }
 
+/* General hide class */
+.hidden {
+  display: none;
+}
+
+.opacity {
+  opacity: 0;
+}
+
 /* |Front page| Nav-bar Section Start*/
 
 header {
@@ -252,7 +261,7 @@ button:hover {
     margin: 16px 0;
   }
   .nav-links.active {
-    padding-top: 20rem;
+    padding-top: 10rem;
     left: 0;
     height: 100vh;
     z-index: 3;
