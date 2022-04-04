@@ -135,8 +135,7 @@ button:hover {
 /* |Front page| Header Start */
 
 .main-header {
-  height: 100vh;
-  /* Div to prevent background from stretching over full height */
+  min-height: 110rem;
 }
 
 .header-section {
@@ -289,6 +288,19 @@ button:hover {
   .header-subtext {
     font-size: 3rem;
     top: -10%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-text {
+    font-size: 7rem;
+    top: -15rem;
     left: 6%;
+  }
+  .header-subtext {
+    font-size: 3rem;
+    top: -10%;
+    left: 4%;
   }
 }
