@@ -17,7 +17,12 @@ html {
 
 /* |Front page| Nav-bar Section Start*/
 
+header {
+  overflow: hidden;
+}
+
 .nav-section {
+  width: 100vw;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -35,7 +40,7 @@ button {
 li,
 a,
 button {
-  font-family: "Mont-serrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 2rem;
   color: white;
@@ -86,9 +91,12 @@ button {
   transform-origin: bottom left;
 }
 
+.cta1 {
+  margin: 0rem 3.5rem 0rem 0rem;
+}
+
 button {
   padding: 0.9rem 2.5rem;
-  margin: 0rem 1.5rem 0rem 0rem;
   color: black;
   border: transparent;
   border-radius: 50px;
@@ -119,3 +127,52 @@ button:hover {
 /* |Front page| Nav-bar Section End */
 
 /* |Front page| Header Start */
+
+.main-header {
+  /* Div to prevent background from stretching over full height */
+}
+
+.header-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 92rem;
+  z-index: 1;
+}
+
+.header-text {
+  font-size: 12rem;
+  font-family: "Montserrat", sans-serif;
+  z-index: 3;
+  color: white;
+}
+.header-subtext {
+  font-size: 6rem;
+  font-family: "Montserrat", sans-serif;
+  z-index: 3;
+  color: white;
+}
+
+.section1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 600px;
+  z-index: 1;
+  background: linear-gradient(#00ffa3, #03e1ff, #dc1fff, #306a9c);
+}
+
+/* |Front page| Header End */
+
+/* |Section 1| Start */
+
+.section1-header-text {
+  color: red
+  font-family: "Montserrat", sans-serif;
+  font-size: 6rem;
+}
