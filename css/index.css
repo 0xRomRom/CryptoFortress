@@ -139,6 +139,21 @@ button:hover {
   }
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
 /* |Front page| Nav-bar Section End */
 
 /* |Front page| Header Start */
@@ -193,23 +208,8 @@ button:hover {
   font-size: 6rem;
 }
 
-/* To be moved elsewhere */
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-  z-index: 4;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-}
+/* ///////////// */
+/* Media Queries */
 
 @media (max-width: 1600px) {
   .nav-links li {

@@ -24,7 +24,7 @@ hamburger.addEventListener("click", () => {
   </li><li class="nav-link">
   <a href="#" class="underline">Quick Links</a>
 </li><li class="nav-link">
-<a href="#" class="underline">Join us</a>
+<a href="https://discord.gg/hBwmkP7rCe" class="underline" target="_blank">Join us</a>
 </li>
   `;
 });
