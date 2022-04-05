@@ -108,35 +108,70 @@ button {
 
 .cta1 {
   margin: 0rem 3.5rem 0rem 0rem;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50px;
+  z-index: 3;
 }
 
 button {
   padding: 0.9rem 2.5rem;
   color: black;
-  border: transparent;
+  background-image: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: relative;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: 1000;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 50px;
-  background: linear-gradient(90deg, #00ffa3, #dc1fff);
-  background-size: 48%;
-  background-clip: padding-box;
-  background-repeat: repeat-y;
-  animation: AnimationName 2s ease infinite;
-  transition: all 1s ease-in-out;
+  border: transparent;
 }
 
-button:hover {
-  background: linear-gradient(to right, #00ffa3, #dc1fff);
-}
-
-@keyframes AnimationName {
+@keyframes glowing {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 0;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 400% 0;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0 0;
   }
+}
+/* button {
+  padding: 0.9rem 2.5rem;
+  color: white;
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(90deg, #00ffa3, #dc1fff) border-box;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50px;
+} */
+/* background: linear-gradient(90deg, #00ffa3, #dc1fff); */
+
+button:hover {
+  /* background: linear-gradient(90deg, #00ffa3, #dc1fff) border-box; */
+  border-radius: 50px;
+  color: black;
+  filter: blur(0px);
 }
 
 .hamburger {
