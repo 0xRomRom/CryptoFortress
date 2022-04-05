@@ -4,6 +4,21 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-links");
 const navbar = document.querySelector(".nav-section");
 const joinUsBtn = document.querySelector(".cta1");
+const letter1 = document.querySelector(".header-span1");
+const letter2 = document.querySelector(".header-span2");
+const letter3 = document.querySelector(".header-span3");
+
+//Random headertext color function
+(function () {
+  setInterval(function () {
+    const randomNum1 = Math.trunc(Math.random() * 255 + 1);
+    const randomNum2 = Math.trunc(Math.random() * 255 + 1);
+    const randomNum3 = Math.trunc(Math.random() * 255 + 1);
+    letter1.style.color = `rgb(${randomNum1}, ${randomNum2}, ${randomNum3})`;
+    letter2.style.color = `rgb(${randomNum1}, ${randomNum2}, ${randomNum3})`;
+    letter3.style.color = `rgb(${randomNum1}, ${randomNum2}, ${randomNum3})`;
+  }, 1000);
+})();
 
 //Burger menu for mobile
 hamburger.addEventListener("click", () => {

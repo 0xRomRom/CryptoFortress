@@ -197,10 +197,11 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 600px;
   z-index: 1;
   background: linear-gradient(#00ffa3, #03e1ff, #dc1fff, #306a9c);
+  min-height: 110rem;
 }
 
 .section1-header-text {
