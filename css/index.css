@@ -138,10 +138,16 @@ button {
   filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
+  animation: glowing 20s linear infinite, fadeOut 1s 0s 1;
   transition: opacity 0.3s ease-in-out;
   border-radius: 50px;
   border: transparent;
+}
+
+button:hover {
+  color: black;
+  filter: blur(0px);
+  animation: glowing 20s linear infinite, fadeIn 1s 0s 1;
 }
 
 @keyframes glowing {
@@ -155,25 +161,32 @@ button {
     background-position: 0 0;
   }
 }
-/* button {
-  padding: 0.9rem 2.5rem;
-  color: white;
-  background: linear-gradient(black, black) padding-box,
-    linear-gradient(90deg, #00ffa3, #dc1fff) border-box;
-  border-width: 4px;
-  border-style: solid;
-  border-color: transparent;
-  border-radius: 50px;
-} */
-/* background: linear-gradient(90deg, #00ffa3, #dc1fff); */
 
-button:hover {
-  /* background: linear-gradient(90deg, #00ffa3, #dc1fff) border-box; */
-  border-radius: 50px;
-  color: black;
-  filter: blur(0px);
+@keyframes fadeIn {
+  0% {
+    filter: blur(5px);
+  }
+  50% {
+    filter: blur(2.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
 }
 
+@keyframes fadeOut {
+  0% {
+    filter: blur(0px);
+  }
+  50% {
+    filter: blur(2.5px);
+  }
+  100% {
+    filter: blur(5px);
+  }
+}
+
+/*Dropdown menu */
 .hamburger {
   display: none;
   cursor: pointer;
