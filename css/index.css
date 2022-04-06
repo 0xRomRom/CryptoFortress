@@ -39,6 +39,18 @@ header {
   align-items: center;
   padding: 1.6rem, 10%;
   z-index: 10000;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .nav-section.sticky {
@@ -64,6 +76,10 @@ button {
 
 .cflogo {
   margin-left: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
 }
 
 .nav-links {
@@ -186,11 +202,6 @@ button:hover {
   }
 }
 
-.hamburger {
-  position: relative;
-  right: -755%;
-}
-
 /*Dropdown menu */
 .hamburger {
   display: none;
@@ -198,6 +209,8 @@ button:hover {
   z-index: 4;
   position: relative;
   right: -755%;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .bar {
@@ -227,6 +240,9 @@ button:hover {
   width: 100vw;
   height: 92rem;
   z-index: 1;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .header-text {
@@ -234,13 +250,38 @@ button:hover {
   font-family: "Montserrat", sans-serif;
   z-index: 3;
   color: white;
+  animation: dropDown 1s 1 ease-in;
 }
+
+@keyframes dropDown {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .header-subtext {
   padding-left: 15rem;
   font-size: 6rem;
   font-family: "Montserrat", sans-serif;
   z-index: 3;
   color: white;
+  animation: pushUp 1.5s 1 ease-in;
+}
+
+@keyframes pushUp {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 /* |Front page| Header End */
@@ -344,6 +385,7 @@ button:hover {
   }
   .cflogo {
     width: 7rem;
+    padding-bottom: 1rem;
   }
   .nav-section.sticky {
     opacity: 1;
@@ -573,7 +615,7 @@ button:hover {
 @media (max-width: 250px) {
   .hamburger {
     position: relative;
-    right: -470%;
+    right: -400%;
   }
   .header-text {
     font-size: 2.7rem;
@@ -582,5 +624,6 @@ button:hover {
   .header-subtext {
     font-size: 1.8rem;
     top: -13%;
+    left: -6%;
   }
 }
