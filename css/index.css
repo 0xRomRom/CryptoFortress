@@ -487,13 +487,14 @@ button:hover {
 
 @media (max-width: 440px) {
   .header-text {
-    font-size: 4.8rem;
-    top: -5rem;
-    left: 2%;
+    font-size: 5.1rem;
+    top: -6rem;
   }
   .header-subtext {
-    font-size: 2rem;
-    top: -6%;
+    font-size: 2.1rem;
+    padding-left: 4.3rem;
+    top: -7%;
+    left: -1rem;
   }
   .hamburger {
     position: relative;
@@ -501,15 +502,14 @@ button:hover {
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 413px) {
   .header-text {
     font-size: 4.4rem;
-    top: -5rem;
-    left: 2%;
+    top: -8rem;
   }
   .header-subtext {
-    font-size: 1.8rem;
-    top: -6%;
+    font-size: 2rem;
+    top: -8%;
   }
   .hamburger {
     position: relative;
@@ -541,20 +541,46 @@ button:hover {
   }
 }
 
-@media (max-width: 310px) {
-  .hamburger {
-    position: relative;
-    right: -650%;
-  }
+@media (max-width: 350px) {
   .header-text {
-    font-size: 3.5rem;
+    font-size: 4rem;
     top: -5rem;
     left: 2%;
   }
   .header-subtext {
+    font-size: 1.7rem;
+    top: -6%;
+  }
+}
+
+@media (max-width: 310px) {
+  .hamburger {
+    position: relative;
+    right: -550%;
+  }
+  .header-text {
+    font-size: 3rem;
+    top: -15rem;
+    left: 1rem;
+  }
+  .header-subtext {
     font-size: 2.3rem;
-    left: -13%;
-    margin-top: 1.25rem;
-    margin-left: 2rem;
+    left: 2%;
+    top: -13%;
+  }
+}
+
+@media (max-width: 250px) {
+  .hamburger {
+    position: relative;
+    right: -470%;
+  }
+  .header-text {
+    font-size: 2.7rem;
+    top: -15rem;
+  }
+  .header-subtext {
+    font-size: 1.8rem;
+    top: -13%;
   }
 }
