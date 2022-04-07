@@ -39,7 +39,7 @@ hamburger.addEventListener("click", () => {
     </li><li class="nav-link">
     <a href="#" class="underline">Quick Links</a>
   </li><li class="nav-link">
-  <a href="https://discord.gg/hBwmkP7rCe" class="underline" target="_blank">Join us</a>
+  <a href="#" class="underline">Join us</a>
   </li>
     `;
 });
@@ -47,4 +47,14 @@ hamburger.addEventListener("click", () => {
 //Navigation upon scroll transparent
 window.addEventListener("scroll", () => {
   navbar.classList.toggle("sticky", window.scrollY > 0);
+});
+
+//Section1 fade in
+window.addEventListener("scroll", () => {
+  let content = document.querySelector(".section1");
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight;
+  contentPosition < screenPosition
+    ? content.classList.add("active")
+    : content.classList.remove("active");
 });
