@@ -8,24 +8,24 @@ const letter1 = document.querySelector(".header-span1");
 const letter2 = document.querySelector(".header-span2");
 const letter3 = document.querySelector(".header-span3");
 const modalIcons = document.querySelector(".hover-list");
-const modal1 = document.querySelector(".modal1");
-const modal2 = document.querySelector(".modal2");
-const modal3 = document.querySelector(".modal3");
-const modal4 = document.querySelector(".modal4");
-const modal5 = document.querySelector(".modal5");
 const modal1Box = document.querySelector(".modal1-box");
 const modal2Box = document.querySelector(".modal2-box");
 const modal3Box = document.querySelector(".modal3-box");
 const modal4Box = document.querySelector(".modal4-box");
 const modal5Box = document.querySelector(".modal5-box");
+const modal1 = document.querySelector(".modal1");
+const modal2 = document.querySelector(".modal2");
+const modal3 = document.querySelector(".modal3");
+const modal4 = document.querySelector(".modal4");
+const modal5 = document.querySelector(".modal5");
 const modal1Text = document.querySelector(".modal1-text");
 const modal2Text = document.querySelector(".modal2-text");
 const modal3Text = document.querySelector(".modal3-text");
 const modal4Text = document.querySelector(".modal4-text");
 const modal5Text = document.querySelector(".modal5-text");
+const section1Height = document.querySelector(".section1");
 
 //Random headertext color function
-
 (function () {
   setInterval(function () {
     const randomNum1 = Math.trunc(Math.random() * 255 + 1);
@@ -70,7 +70,7 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
   let content = document.querySelector(".section1");
   let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight - -150;
+  let screenPosition = window.innerHeight;
   contentPosition < screenPosition
     ? content.classList.add("active")
     : content.classList.remove("active");
