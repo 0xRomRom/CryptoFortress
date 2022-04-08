@@ -395,6 +395,7 @@ section {
   position: relative;
 }
 
+/*Modal 1*/
 .modal1 {
   transition: all 0.5s ease-in-out;
 }
@@ -416,6 +417,16 @@ section {
   display: block;
 }
 
+.modal-span1 {
+  color: rgb(20, 201, 20);
+}
+.modal-span2 {
+  color: rgb(235, 26, 207);
+  display: block;
+  padding-top: 3rem;
+}
+
+/*Modal 2*/
 .modal2 {
   transition: all 0.5s ease-in-out;
 }
@@ -434,6 +445,11 @@ section {
   color: rgb(20, 201, 20);
 }
 
+.modal-span3 {
+  color: rgb(255, 0, 0);
+}
+
+/*Modal 3*/
 .modal3 {
   transition: all 0.5s ease-in-out;
 }
@@ -453,6 +469,17 @@ section {
   color: rgb(59, 92, 201);
 }
 
+.modal-span4 {
+  color: rgb(59, 92, 201);
+  display: block;
+  padding-top: 3rem;
+}
+
+.modal-span5 {
+  color: rgb(182, 241, 43);
+}
+
+/*Modal 4*/
 .modal4 {
   transition: all 0.5s ease-in-out;
 }
@@ -471,7 +498,11 @@ section {
   visibility: hidden;
   color: rgb(194, 197, 31);
 }
+.modal-span6 {
+  color: rgb(226, 10, 208);
+}
 
+/*Modal 5*/
 .modal5 {
   transition: all 0.5s ease-in-out;
 }
@@ -491,10 +522,14 @@ section {
   color: rgb(253, 0, 0);
 }
 
+.modal-span7 {
+  color: rgb(219, 243, 8);
+}
+
 .modal-position {
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 20%;
+  left: 20%;
 }
 
 .fa-solid {
