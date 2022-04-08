@@ -70,7 +70,7 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
   let content = document.querySelector(".section1");
   let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight;
+  let screenPosition = window.innerHeight - -150;
   contentPosition < screenPosition
     ? content.classList.add("active")
     : content.classList.remove("active");

@@ -497,6 +497,11 @@ section {
   width: 75%;
   height: 100%;
 }
+
+.fa-solid {
+  position: relative;
+  left: 20%;
+}
 /* ///////////// */
 /* Media Queries */
 
