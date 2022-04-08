@@ -348,10 +348,10 @@ section {
 
 .section1-header-text {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 35%;
   font-family: "Montserrat", sans-serif;
-  font-size: 9rem;
+  font-size: 7vw;
   color: white;
   animation: dropDown 0.5s 1 ease-in;
   display: block;
@@ -359,7 +359,7 @@ section {
 
 .section1-header-subtext {
   position: relative;
-  font-size: 4rem;
+  font-size: 2.5vw;
   font-family: "Montserrat", sans-serif;
   color: white;
   width: 75%;
@@ -398,7 +398,7 @@ section {
 .hover-modals {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  font-size: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -547,6 +547,7 @@ section {
 .fa-solid {
   position: relative;
   left: 20%;
+  font-size: 2vw;
 }
 /* ///////////// */
 /* Media Queries */
@@ -578,6 +579,9 @@ section {
 @media (max-width: 1220px) {
   .nav-links li {
     padding: 0rem 1.5rem;
+  }
+  .section1-header-text {
+    top: 20%;
   }
 }
 
@@ -651,6 +655,12 @@ section {
   .hamburger {
     position: relative;
     right: -1855%;
+  }
+  .section1 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 }
 
