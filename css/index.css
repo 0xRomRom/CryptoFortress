@@ -537,7 +537,6 @@ section {
 
 .modal-position {
   position: absolute;
-  top: 20%;
   left: 20%;
 }
 
@@ -775,6 +774,9 @@ section {
   .explore-anchor {
     top: -30rem;
     left: 50%;
+  }
+  .modal-position {
+    top: 25%;
   }
 }
 

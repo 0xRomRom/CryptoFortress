@@ -24,7 +24,6 @@ const modal3Text = document.querySelector(".modal3-text");
 const modal4Text = document.querySelector(".modal4-text");
 const modal5Text = document.querySelector(".modal5-text");
 const section1Height = document.querySelector(".section1");
-
 //Random headertext color function
 (function () {
   setInterval(function () {
@@ -72,9 +71,8 @@ window.addEventListener("scroll", () => {
 });
 
 // Hover modals
-
 //Modal (1
-modal1Box.addEventListener("mouseover", (e) => {
+modal1Box.addEventListener("mouseover", () => {
   modal1.classList.add("modal1Animate");
   modal1Text.classList.add("opacity");
   modal1Text.style.visibility = "initial";
