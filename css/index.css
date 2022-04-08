@@ -271,6 +271,23 @@ button:hover {
   }
 }
 
+/* .explore-container {
+  position: relative;
+  width: 50%;
+  margin: 0rem 3.5rem 0rem 0rem;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50px;
+  z-index: 3;
+} */
+
+.explore-anchor {
+  position: relative;
+  top: -15rem;
+  left: 65%;
+}
+
 .btn1 {
   padding: 0.9rem 2.5rem;
   color: black;
@@ -288,13 +305,8 @@ button:hover {
   );
   cursor: pointer;
   position: relative;
-  top: 10rem;
-  left: 45rem;
   background-size: 400%;
   z-index: 1000;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
   border-radius: 50px;
   border: transparent;
   animation: glowing 20s linear infinite, fadeIn 1s 0s 1;
@@ -314,7 +326,7 @@ section {
 .section1 {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
   gap: 15rem;
@@ -326,7 +338,7 @@ section {
   transform: scale(0.1);
   transition: all 1s ease-in-out;
   opacity: 0;
-  padding-top: 10rem;
+  padding-bottom: 5rem;
 }
 
 .active {
@@ -523,7 +535,7 @@ section {
 }
 
 .modal-span7 {
-  color: rgb(219, 243, 8);
+  color: rgb(189, 209, 13);
 }
 
 .modal-position {
@@ -629,6 +641,10 @@ section {
     position: relative;
     right: -2055%;
   }
+  .explore-anchor {
+    top: -25rem;
+    left: 65%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -725,6 +741,10 @@ section {
     position: relative;
     right: -1055%;
   }
+  .explore-anchor {
+    top: -30rem;
+    left: 50%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -755,6 +775,10 @@ section {
   .hamburger {
     position: relative;
     right: -900%;
+  }
+  .explore-anchor {
+    top: -35rem;
+    left: 40%;
   }
 }
 
