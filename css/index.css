@@ -662,6 +662,15 @@ section {
     align-items: center;
     gap: 2rem;
   }
+  .hover-menu {
+    width: 80%;
+  }
+  .hover-icons {
+    margin-right: -10rem;
+  }
+  .section1-header-text {
+    top: 15%;
+  }
 }
 
 @media (max-width: 930px) {
@@ -735,6 +744,15 @@ section {
   .hamburger {
     position: relative;
     right: -1200%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hover-modals {
+    font-size: 4vw;
+  }
+  .section1-header-subtext {
+    font-size: 4vw;
   }
 }
 
