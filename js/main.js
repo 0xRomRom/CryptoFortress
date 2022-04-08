@@ -61,11 +61,6 @@ hamburger.addEventListener("click", () => {
     `;
 });
 
-//Navigation upon scroll transparent
-window.addEventListener("scroll", () => {
-  navbar.classList.toggle("sticky", window.scrollY > 0);
-});
-
 //Section1 fade in
 window.addEventListener("scroll", () => {
   let content = document.querySelector(".section1");

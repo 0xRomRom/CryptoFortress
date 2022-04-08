@@ -43,10 +43,6 @@ header {
   z-index: 10000;
 }
 
-.nav-section.sticky {
-  opacity: 0.8;
-}
-
 .nav-section > img,
 nav,
 a,
@@ -339,6 +335,7 @@ section {
   transition: all 1s ease-in-out;
   opacity: 0;
   padding-bottom: 5rem;
+  overflow: hidden;
 }
 
 .active {
@@ -634,9 +631,6 @@ section {
     width: 7rem;
     padding-bottom: 1rem;
   }
-  .nav-section.sticky {
-    opacity: 1;
-  }
   .cta1,
   button {
     visibility: hidden;
@@ -670,6 +664,10 @@ section {
   }
   .section1-header-text {
     top: 15%;
+  }
+  .hover-list {
+    justify-content: center;
+    gap: 1.5rem;
   }
 }
 
@@ -728,6 +726,11 @@ section {
   .hamburger {
     position: relative;
     right: -1455%;
+  }
+  .fa-solid {
+    position: relative;
+    left: 20%;
+    font-size: 3.5vw;
   }
 }
 
