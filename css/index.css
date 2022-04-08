@@ -493,9 +493,8 @@ section {
 
 .modal-position {
   position: absolute;
-  top: 5%;
-  width: 75%;
-  height: 100%;
+  top: 40%;
+  left: 40%;
 }
 
 .fa-solid {
