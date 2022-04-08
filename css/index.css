@@ -22,7 +22,8 @@ html {
 }
 
 .opacity {
-  opacity: 0;
+  opacity: 1;
+  animation: glowing 20s linear infinite, fadeIn 1s 0s 1;
 }
 
 /* |Front page| Nav-bar Section Start*/
@@ -313,8 +314,8 @@ section {
 .section1 {
   position: relative;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   gap: 15rem;
   width: 100%;
@@ -334,24 +335,167 @@ section {
 }
 
 .section1-header-text {
-  position: relative;
+  position: absolute;
+  top: 20%;
+  left: 35%;
   font-family: "Montserrat", sans-serif;
   font-size: 9rem;
   color: white;
-  width: 75%;
   animation: dropDown 0.5s 1 ease-in;
+  display: block;
 }
 
 .section1-header-subtext {
+  position: relative;
   font-size: 4rem;
   font-family: "Montserrat", sans-serif;
   color: white;
   width: 75%;
+  left: 5%;
 }
 
-.subtext-box {
+.early {
+  display: block;
+  line-height: 5em;
+}
+/* Hover modal section */
+
+.hover-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  overflow: hidden;
+  min-height: 100%;
+  width: 17rem;
+}
+
+.hover-icons {
+  list-style: none;
+  height: 100%;
+}
+.hover-menu {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 35rem;
+  width: 80%;
+}
+.hover-modals {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
   position: relative;
+}
+
+.modal1 {
+  transition: all 0.5s ease-in-out;
+}
+
+.modal1-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.modal1Animate {
+  color: rgb(235, 26, 207);
+  transform: translateX(4rem);
+}
+
+.modal1-text {
+  visibility: hidden;
+  color: rgb(235, 26, 207);
+  display: block;
+}
+
+.modal2 {
+  transition: all 0.5s ease-in-out;
+}
+
+.modal2-box {
+  position: relative;
+  width: 100%;
+}
+.modal2Animate {
+  color: rgb(20, 201, 20);
+  transform: translateX(4rem);
+}
+
+.modal2-text {
+  visibility: hidden;
+  color: rgb(20, 201, 20);
+}
+
+.modal3 {
+  transition: all 0.5s ease-in-out;
+}
+
+.modal3-box {
+  position: relative;
+  width: 100%;
+}
+
+.modal3Animate {
+  color: rgb(59, 92, 201);
+  transform: translateX(4rem);
+}
+
+.modal3-text {
+  visibility: hidden;
+  color: rgb(59, 92, 201);
+}
+
+.modal4 {
+  transition: all 0.5s ease-in-out;
+}
+
+.modal4-box {
+  position: relative;
+  width: 100%;
+}
+
+.modal4Animate {
+  color: rgb(194, 197, 31);
+  transform: translateX(4rem);
+}
+
+.modal4-text {
+  visibility: hidden;
+  color: rgb(194, 197, 31);
+}
+
+.modal5 {
+  transition: all 0.5s ease-in-out;
+}
+
+.modal5-box {
+  position: relative;
+  width: 100%;
+}
+
+.modal5Animate {
+  color: rgb(253, 0, 0);
+  transform: translateX(4rem);
+}
+
+.modal5-text {
+  visibility: hidden;
+  color: rgb(253, 0, 0);
+}
+
+.modal-position {
+  position: absolute;
+  top: 5%;
   width: 75%;
+  height: 100%;
 }
 /* ///////////// */
 /* Media Queries */
