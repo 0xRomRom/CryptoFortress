@@ -356,19 +356,10 @@ section {
 
 @keyframes glowing1 {
   from {
-    text-shadow: 0 0 5px rgba(145, 92, 182, 0.3);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
   }
   to {
     text-shadow: 0 0 40px rgba(145, 92, 182, 1);
-  }
-}
-
-@keyframes glowing1Larger {
-  from {
-    text-shadow: 0 0 40px rgba(145, 92, 182, 0.3);
-  }
-  to {
-    text-shadow: 0 0 90px rgba(145, 92, 182, 1);
   }
 }
 
@@ -681,6 +672,7 @@ section {
   }
   .section1-header-text {
     top: 15rem;
+    animation: none;
   }
   .hover-list {
     justify-content: center;
@@ -776,7 +768,6 @@ section {
   }
   .section1-header-text {
     font-size: 4.4rem;
-    animation: glowing1Larger 1s ease-in-out infinite alternate;
   }
 }
 
