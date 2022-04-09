@@ -144,6 +144,7 @@ button {
   transition: opacity 0.3s ease-in-out;
   border-radius: 50px;
   border: transparent;
+  font-weight: 700;
 }
 
 button:hover {
@@ -286,7 +287,10 @@ button:hover {
 
 .btn1 {
   padding: 0.9rem 2.5rem;
-  color: black;
+  color: rgb(54, 11, 11);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(
     45deg,
     #ff0000,
@@ -350,8 +354,17 @@ section {
   font-family: "Montserrat", sans-serif;
   font-size: 7vw;
   color: white;
-  animation: dropDown 0.5s 1 ease-in;
+  animation: dropDown 0.5s 1 ease-in, glowing1 1s ease-in-out infinite alternate;
   display: block;
+}
+
+@keyframes glowing1 {
+  from {
+    text-shadow: 0 0 5px rgba(145, 92, 182, 0.3);
+  }
+  to {
+    text-shadow: 0 0 40px rgba(145, 92, 182, 1);
+  }
 }
 
 .section1-header-subtext {
