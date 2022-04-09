@@ -317,10 +317,6 @@ button:hover {
   background: transparent;
 }
 
-section {
-  width: 100%;
-}
-
 .section1 {
   position: relative;
   display: flex;
@@ -554,6 +550,78 @@ section {
   left: 20%;
   font-size: 2vw;
 }
+/* |Section 1|  End */
+/* |Section 2| Start */
+.section2 {
+  position: relative;
+  min-height: 100rem;
+  /* border-top: 5px solid white; */
+  overflow: hidden;
+}
+
+.section2-titlebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  gap: 3rem;
+  padding-top: 20rem;
+}
+
+.section2-header-text {
+  display: flex;
+  justify-content: center;
+  top: 15vh;
+  left: 20vw;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 6vw;
+  width: 100%;
+}
+
+.power {
+  animation: hovering 5s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+  /* display: inline; */
+  /* position: absolute; */
+}
+
+@keyframes hovering {
+  0% {
+    position: relative;
+    transform: translateY(0%);
+    color: white;
+  }
+  10% {
+    transform: translateY(-5px);
+    position: relative;
+    color: red;
+  }
+  20% {
+    transform: translateY(0px);
+    position: relative;
+    color: white;
+  }
+
+  100% {
+    transform: translateY(0px);
+    position: relative;
+    color: white;
+  }
+}
+
+.section2-header-subtext {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5vw;
+  font-family: "Montserrat", sans-serif;
+  z-index: 3;
+  color: white;
+  left: 10vw;
+  top: 10vh;
+}
+/* |Section 2|  End */
+
 /* ///////////// */
 /* Media Queries */
 

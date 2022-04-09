@@ -48,7 +48,7 @@ hamburger.addEventListener("click", () => {
       <a href="#" class="underline">Crypto News</a>
     </li>
     <li class="nav-link">
-      <a href="#" class="underline">Tutorials</a>
+      <a href="#" class="underline">Academy</a>
     </li>
     <li class="nav-link">
       <a href="#" class="underline">Project Review</a>
