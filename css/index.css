@@ -326,7 +326,8 @@ button:hover {
   gap: 15rem;
   width: 100%;
   z-index: 1;
-  min-height: 130rem;
+  min-height: 110rem;
+  padding-top: 15rem;
   transform: scale(0.1);
   transition: all 1s ease-in-out;
   opacity: 0;
@@ -381,8 +382,7 @@ button:hover {
   align-items: center;
   flex-direction: column;
   gap: 4rem;
-  overflow: hidden;
-  min-height: 100%;
+  height: 100%;
   width: 17rem;
 }
 
@@ -394,7 +394,7 @@ button:hover {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  height: 35rem;
+  height: 45rem;
   width: 80%;
 }
 .hover-modals {
@@ -417,7 +417,8 @@ button:hover {
 .modal1-box {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 6rem;
+  padding-top: 2rem;
 }
 
 .modal1Animate {
@@ -448,6 +449,8 @@ button:hover {
 .modal2-box {
   position: relative;
   width: 100%;
+  height: 6rem;
+  padding-top: 2rem;
 }
 .modal2Animate {
   color: rgb(20, 201, 20);
@@ -471,6 +474,8 @@ button:hover {
 .modal3-box {
   position: relative;
   width: 100%;
+  height: 6rem;
+  padding-top: 2rem;
 }
 
 .modal3Animate {
@@ -501,6 +506,8 @@ button:hover {
 .modal4-box {
   position: relative;
   width: 100%;
+  height: 6rem;
+  padding-top: 2rem;
 }
 
 .modal4Animate {
@@ -524,6 +531,8 @@ button:hover {
 .modal5-box {
   position: relative;
   width: 100%;
+  height: 6rem;
+  padding-top: 2rem;
 }
 
 .modal5Animate {
@@ -554,36 +563,26 @@ button:hover {
 /* |Section 2| Start */
 .section2 {
   position: relative;
-  min-height: 120rem;
+  min-height: 110rem;
   border-top: 5px solid white;
   overflow: hidden;
 }
 
-.section2-titlebox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: space-between;
-  gap: 3rem;
-  padding-top: 40rem;
-}
-
 .section2-header-text {
   display: flex;
-  justify-content: center;
-  top: 15vh;
-  left: 20vw;
+  position: absolute;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 6vw;
+  font-size: 8vw;
+  left: 10vw;
+  top: 15vh;
   width: 100%;
 }
 
 .power {
+  display: flex;
   animation: hovering 5s 1s ease-in-out forwards;
   animation-iteration-count: infinite;
-  /* display: inline; */
-  /* position: absolute; */
 }
 
 @keyframes hovering {
@@ -611,6 +610,7 @@ button:hover {
 }
 
 .section2-header-subtext {
+  position: absolute;
   display: flex;
   justify-content: center;
   font-size: 2.5vw;
@@ -618,7 +618,7 @@ button:hover {
   z-index: 3;
   color: white;
   left: 10vw;
-  top: 10vh;
+  top: 60vh;
 }
 /* |Section 2|  End */
 
@@ -655,6 +655,26 @@ button:hover {
   }
   .section1-header-text {
     top: 20%;
+  }
+  .modal1-box {
+    height: 3rem;
+    padding-top: 0rem;
+  }
+  .modal2-box {
+    height: 3rem;
+    padding-top: 0rem;
+  }
+  .modal3-box {
+    height: 3rem;
+    padding-top: 0rem;
+  }
+  .modal4-box {
+    height: 3rem;
+    padding-top: 0rem;
+  }
+  .modal5-box {
+    height: 3rem;
+    padding-top: 0rem;
   }
 }
 

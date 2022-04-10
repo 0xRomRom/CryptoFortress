@@ -7,7 +7,6 @@ const joinUsBtn = document.querySelector(".cta1");
 const letter1 = document.querySelector(".header-span1");
 const letter2 = document.querySelector(".header-span2");
 const letter3 = document.querySelector(".header-span3");
-const modalIcons = document.querySelector(".hover-list");
 const modal1Box = document.querySelector(".modal1-box");
 const modal2Box = document.querySelector(".modal2-box");
 const modal3Box = document.querySelector(".modal3-box");
@@ -24,6 +23,7 @@ const modal3Text = document.querySelector(".modal3-text");
 const modal4Text = document.querySelector(".modal4-text");
 const modal5Text = document.querySelector(".modal5-text");
 const section1Height = document.querySelector(".section1");
+
 //Random headertext color function
 (function () {
   setInterval(function () {
