@@ -431,6 +431,8 @@ button:hover {
   visibility: hidden;
   color: rgb(235, 26, 207);
   display: block;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.8vw;
 }
 
 .modal-span1 {
@@ -461,6 +463,8 @@ button:hover {
 .modal2-text {
   visibility: hidden;
   color: rgb(20, 201, 20);
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.8vw;
 }
 
 .modal-span3 {
@@ -487,6 +491,8 @@ button:hover {
 .modal3-text {
   visibility: hidden;
   color: rgb(59, 92, 201);
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.8vw;
 }
 
 .modal-span4 {
@@ -519,6 +525,8 @@ button:hover {
 .modal4-text {
   visibility: hidden;
   color: rgb(194, 197, 31);
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.8vw;
 }
 .modal-span6 {
   color: rgb(226, 10, 208);
@@ -544,6 +552,8 @@ button:hover {
 .modal5-text {
   visibility: hidden;
   color: rgb(253, 0, 0);
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.8vw;
 }
 
 .modal-span7 {
@@ -564,9 +574,10 @@ button:hover {
 /* |Section 2| Start */
 .section2 {
   position: relative;
-  min-height: 110rem;
+  min-height: 120rem;
   border-top: 5px solid white;
   overflow: hidden;
+  padding-top: 20rem;
 }
 
 .section2-header-box {
