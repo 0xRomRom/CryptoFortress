@@ -1,5 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 /* Setting defaults */
 
@@ -53,7 +54,7 @@ button {
 li,
 a,
 button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
   font-size: 2rem;
   color: white;
@@ -74,7 +75,7 @@ button {
 
 .nav-links li {
   display: inline-block;
-  padding: 0rem 6.5rem;
+  padding: 0rem 3.5rem;
 }
 
 .nav-links li a {
@@ -118,7 +119,7 @@ button {
 }
 
 button {
-  padding: 0.9rem 2.5rem;
+  padding: 1rem 2.5rem;
   color: black;
   background-image: linear-gradient(
     45deg,
@@ -231,7 +232,7 @@ button:hover {
 
 .header-text {
   font-size: 12rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   z-index: 3;
   color: white;
   animation: dropDown 0.5s 1 ease-in;
@@ -275,11 +276,11 @@ button:hover {
 }
 
 .btn1 {
-  padding: 0.9rem 2.5rem;
+  padding: 1rem 2.5rem;
   color: rgb(54, 11, 11);
   font-size: 2rem;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   background-image: linear-gradient(
     45deg,
     #ff0000,
@@ -343,9 +344,9 @@ button:hover {
 .section1-header-text {
   position: absolute;
   top: 10%;
-  left: 35%;
-  font-family: "Montserrat", sans-serif;
-  font-size: 7vw;
+  left: 20vw;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 6vw;
   color: white;
   animation: dropDown 0.5s 1 ease-in, glowing1 1s ease-in-out infinite alternate;
   display: block;
@@ -579,14 +580,15 @@ button:hover {
 .section2-header-text {
   display: flex;
   color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 7vw;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 4vw;
   width: 100%;
 }
 
 .title-span {
-  font-size: 2.5vw;
-  font-family: "Montserrat", sans-serif;
+  padding-top: 0.5rem;
+  font-size: 1.25vw;
+  font-family: "Press Start 2P", sans-serif;
   z-index: 3;
   color: white;
 }
@@ -621,22 +623,33 @@ button:hover {
   }
 }
 
-.section2-href-title {
+.section2-content {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 10rem;
+  top: 30vh;
+  gap: 5rem;
+}
+
+.section2-description-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.section2-href-title {
   font-size: 2.5vw;
   font-family: "Montserrat", sans-serif;
   z-index: 3;
   color: white;
-  left: 14vw;
-  top: 40vh;
+  padding-bottom: 5rem;
+  padding-left: 8.5rem;
 }
 
 .bottom-container {
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 15rem;
-  top: 40rem;
   gap: 3rem;
   height: 30rem;
 }
@@ -662,57 +675,134 @@ button:hover {
   color: white;
 }
 
-.links-block {
+.sec2-modal-box {
+  /*Placeholder for Flexbox functionality */
+}
+
+.option-menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 5rem;
-  height: 20rem;
-  width: 20rem;
-  position: absolute;
-  top: 50vh;
+  justify-content: space-around;
+  align-items: center;
+  height: 45vh;
+  width: 20vw;
+  border-radius: 5rem;
+  background-image: linear-gradient(45deg, #00ffa3, #03e1ff, #dc1fff, #306a9c);
+  background-size: 600%;
+  z-index: 1000;
+  border: transparent;
+  animation: glowingOption 15s linear infinite;
 }
 
-.fa-circle-dollar {
-  font-size: 2.5vw;
-  font-family: "Montserrat", sans-serif;
-  z-index: 3;
-  color: white;
-  display: block;
+@keyframes glowingOption {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
+.cta-exchange {
+  background: red;
+  padding: 1.2rem 2.5rem;
+  color: rgb(54, 11, 11);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Press Start 2P", sans-serif;
+  cursor: pointer;
+  background-size: 400%;
+  border: transparent;
+  width: 80%;
+}
+
+.cta-academy {
+  background: red;
+  padding: 1.2rem 2.5rem;
+  color: rgb(54, 11, 11);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Press Start 2P", sans-serif;
+  cursor: pointer;
+  background-size: 400%;
+  border: transparent;
+  width: 80%;
+}
+
+.cta-legion {
+  background: red;
+  padding: 1.2rem 2.5rem;
+  color: rgb(54, 11, 11);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Press Start 2P", sans-serif;
+  cursor: pointer;
+  background-size: 400%;
+  border: transparent;
+  width: 80%;
+}
 /* |Section 2|  End */
 
 /* ///////////// */
 /* Media Queries */
 
+@media (max-width: 1810px) {
+  .nav-links li {
+    padding: 0rem 2.5rem;
+  }
+  a {
+    font-size: 1.75rem;
+  }
+  .header-text {
+    font-size: 10rem;
+  }
+}
+
 @media (max-width: 1700px) {
   .nav-links li {
-    padding-left: 4rem;
+    padding: 0rem 2.2rem;
   }
 }
 
 @media (max-width: 1600px) {
   .nav-links li {
-    padding: 0rem 4.55rem;
+    padding: 0rem 1.8rem;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1520px) {
+  .header-text {
+    font-size: 8rem;
   }
 }
 
 @media (max-width: 1460px) {
   .nav-links li {
-    padding: 0rem 2.55rem;
+    padding: 0rem 1.8rem;
+  }
+  a {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 1300px) {
   .nav-links li {
-    padding: 0rem 2.55rem;
+    padding: 0rem 1.7rem;
+  }
+  a {
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 1220px) {
   .nav-links li {
-    padding: 0rem 1.5rem;
+    padding: 0rem 0.6rem;
   }
   .section1-header-text {
     top: 20%;
@@ -737,14 +827,25 @@ button:hover {
     height: 3rem;
     padding-top: 0rem;
   }
+  .header-text {
+    font-size: 8rem;
+  }
+  .header-text {
+    font-size: 7rem;
+    padding-bottom: 2rem;
+  }
+  .header-subtext {
+    font-size: 5.5rem;
+  }
 }
 
 @media (max-width: 1100px) {
   .header-text {
-    font-size: 10rem;
+    font-size: 5.8rem;
+    padding-bottom: 2rem;
   }
   .header-subtext {
-    font-size: 5rem;
+    font-size: 3.8rem;
     left: 0.3%;
   }
   .hamburger {
@@ -831,7 +932,8 @@ button:hover {
 
 @media (max-width: 930px) {
   .header-text {
-    font-size: 10rem;
+    font-size: 10vw;
+    left: 10vw;
   }
   .header-subtext {
     font-size: 4.5rem;
@@ -942,7 +1044,8 @@ button:hover {
   }
   .section1-header-text {
     position: absolute;
-    left: 25vw;
+    left: 15vw;
+    font-size: 7vw;
   }
 }
 
@@ -965,7 +1068,6 @@ button:hover {
   .header-text {
     font-size: 5rem;
     top: -5rem;
-    left: 2%;
   }
   .header-subtext {
     font-size: 2.2rem;
@@ -1012,7 +1114,7 @@ button:hover {
     right: -700%;
   }
   .section1-header-text {
-    font-size: 4.4rem;
+    font-size: 7vw;
   }
 }
 
