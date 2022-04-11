@@ -575,7 +575,7 @@ button:hover {
 .section2 {
   position: relative;
   min-height: 120rem;
-  border-top: 5px solid white;
+  /* border-top: 5px solid white; */
   overflow: hidden;
   padding-top: 20rem;
 }
