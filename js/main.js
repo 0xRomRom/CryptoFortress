@@ -27,6 +27,7 @@ const modal4Text = document.querySelector(".modal4-text");
 const modal5Text = document.querySelector(".modal5-text");
 //Offset for fade in
 const section1Height = document.querySelector(".section1");
+const section2Height = document.querySelector(".section2");
 //Section 2 cta menu
 const ctaExchange = document.querySelector(".cta-exchange");
 const ctaExchangeNote = document.querySelector(".exchange-sidenote");
@@ -71,14 +72,33 @@ hamburger.addEventListener("click", () => {
     `;
 });
 
-//Section1 fade in
+//Section1 fade in/out
 window.addEventListener("scroll", () => {
-  let content = document.querySelector(".section1");
-  let contentPosition = content.getBoundingClientRect().top;
+  const content = document.querySelector(".section1");
+  let contentTop = content.getBoundingClientRect().top;
+  let contentBottom = content.getBoundingClientRect().bottom;
   let screenPosition = window.innerHeight;
-  contentPosition < screenPosition
+  contentTop < screenPosition
     ? content.classList.add("active")
     : content.classList.remove("active");
+  if (contentBottom < 133) {
+    content.classList.remove("active");
+  }
+});
+
+// //Section2 fade in/out
+window.addEventListener("scroll", () => {
+  const content = document.querySelector(".section2");
+  let contentTop = content.getBoundingClientRect().top;
+  let contentBottom = content.getBoundingClientRect().bottom;
+  let screenPosition = window.innerHeight;
+
+  contentTop < screenPosition
+    ? content.classList.add("active")
+    : content.classList.remove("active");
+  // if (contentBottom < 133) {
+  //   content.classList.remove("active");
+  // }
 });
 
 // Hover modals

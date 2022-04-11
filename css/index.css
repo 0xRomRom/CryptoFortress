@@ -336,11 +336,6 @@ button:hover {
   overflow: hidden;
 }
 
-.active {
-  opacity: 1;
-  transform: scale(1);
-}
-
 .section1-header-text {
   position: absolute;
   top: 10%;
@@ -577,7 +572,15 @@ button:hover {
   min-height: 120rem;
   /* border-top: 5px solid white; */
   overflow: hidden;
-  padding-top: 20rem;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .section2-header-box {
@@ -693,7 +696,7 @@ button:hover {
 .option-menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 45vh;
   width: 20vw;
@@ -721,23 +724,22 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
-  gap: 3rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .cta-exchange {
   background: red;
-  padding: 1.2rem 2.5rem;
+  padding: 1.2rem 1.5rem;
   color: rgb(54, 11, 11);
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   font-family: "Press Start 2P", sans-serif;
   cursor: pointer;
   background-size: 400%;
   border: transparent;
   border-radius: 10rem;
-  width: 100%;
-  display: flex;
+  width: 80%;
 }
 
 .cta-exchange:hover {
@@ -750,14 +752,15 @@ button:hover {
   font-weight: 700;
   font-family: "Press Start 2P", sans-serif;
   opacity: 0;
+  width: 80%;
+  padding-top: 1rem;
 }
 
 .option2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
-  gap: 3rem;
+  width: 100%;
 }
 
 .cta-academy {
@@ -784,13 +787,14 @@ button:hover {
   font-weight: 700;
   font-family: "Press Start 2P", sans-serif;
   opacity: 0;
+  padding-top: 1rem;
 }
 
 .option3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .cta-legion {
@@ -817,6 +821,7 @@ button:hover {
   font-weight: 700;
   font-family: "Press Start 2P", sans-serif;
   opacity: 0;
+  padding-top: 1rem;
 }
 
 @keyframes hoverUp {
@@ -1008,6 +1013,10 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    min-height: 100rem;
+  }
+  .section2 {
+    min-height: 100rem;
   }
   .hover-menu {
     width: 80%;
