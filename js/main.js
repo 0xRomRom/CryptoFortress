@@ -1,12 +1,15 @@
 "use strict";
 
+//Navigation
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-links");
 const navbar = document.querySelector(".nav-section");
 const joinUsBtn = document.querySelector(".cta1");
+//Animated header font letters
 const letter1 = document.querySelector(".header-span1");
 const letter2 = document.querySelector(".header-span2");
 const letter3 = document.querySelector(".header-span3");
+//Section 1 modal hover menu
 const modal1Box = document.querySelector(".modal1-box");
 const modal2Box = document.querySelector(".modal2-box");
 const modal3Box = document.querySelector(".modal3-box");
@@ -22,7 +25,15 @@ const modal2Text = document.querySelector(".modal2-text");
 const modal3Text = document.querySelector(".modal3-text");
 const modal4Text = document.querySelector(".modal4-text");
 const modal5Text = document.querySelector(".modal5-text");
+//Offset for fade in
 const section1Height = document.querySelector(".section1");
+//Section 2 cta menu
+const ctaExchange = document.querySelector(".cta-exchange");
+const ctaExchangeNote = document.querySelector(".exchange-sidenote");
+const ctaAcademy = document.querySelector(".cta-academy");
+const ctaAcademyNote = document.querySelector(".academy-sidenote");
+const ctaLegion = document.querySelector(".cta-legion");
+const ctaLegionNote = document.querySelector(".legion-sidenote");
 
 //Random headertext color function
 (function () {
@@ -134,4 +145,33 @@ modal5Box.addEventListener("mouseleave", () => {
   modal5.classList.remove("modal5Animate");
   modal5Text.classList.remove("opacity");
   modal5Text.style.visibility = "hidden";
+});
+
+// Section2
+
+ctaExchange.addEventListener("mouseover", () => {
+  ctaExchangeNote.style.visibility = "initial";
+  ctaExchangeNote.style.opacity = "1";
+});
+
+ctaExchange.addEventListener("mouseleave", () => {
+  ctaExchangeNote.style.visibility = "hidden";
+});
+
+ctaAcademy.addEventListener("mouseover", () => {
+  ctaAcademyNote.style.visibility = "initial";
+  ctaAcademyNote.style.opacity = "1";
+});
+
+ctaAcademy.addEventListener("mouseleave", () => {
+  ctaAcademyNote.style.visibility = "hidden";
+});
+
+ctaLegion.addEventListener("mouseover", () => {
+  ctaLegionNote.style.visibility = "initial";
+  ctaLegionNote.style.opacity = "1";
+});
+
+ctaLegion.addEventListener("mouseleave", () => {
+  ctaLegionNote.style.visibility = "hidden";
 });

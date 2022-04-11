@@ -717,6 +717,14 @@ button:hover {
   }
 }
 
+.option1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 3rem;
+}
+
 .cta-exchange {
   background: red;
   padding: 1.2rem 2.5rem;
@@ -727,7 +735,29 @@ button:hover {
   cursor: pointer;
   background-size: 400%;
   border: transparent;
+  border-radius: 10rem;
+  width: 100%;
+  display: flex;
+}
+
+.cta-exchange:hover {
+  animation: hoverUp 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.exchange-sidenote {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Press Start 2P", sans-serif;
+  opacity: 0;
+}
+
+.option2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 80%;
+  gap: 3rem;
 }
 
 .cta-academy {
@@ -740,6 +770,26 @@ button:hover {
   cursor: pointer;
   background-size: 400%;
   border: transparent;
+  border-radius: 10rem;
+  width: 80%;
+}
+
+.cta-academy:hover {
+  animation: hoverUp 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.academy-sidenote {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Press Start 2P", sans-serif;
+  opacity: 0;
+}
+
+.option3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 80%;
 }
 
@@ -753,8 +803,42 @@ button:hover {
   cursor: pointer;
   background-size: 400%;
   border: transparent;
+  border-radius: 10rem;
   width: 80%;
 }
+
+.cta-legion:hover {
+  animation: hoverUp 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.legion-sidenote {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Press Start 2P", sans-serif;
+  opacity: 0;
+}
+
+@keyframes hoverUp {
+  0% {
+    position: relative;
+    transform: translateY(0%);
+    color: white;
+  }
+
+  50% {
+    position: relative;
+    transform: translateY(-7px);
+    color: white;
+  }
+
+  100% {
+    transform: translateY(0%);
+    position: relative;
+    color: white;
+  }
+}
+
 /* |Section 2|  End */
 
 /* ///////////// */
