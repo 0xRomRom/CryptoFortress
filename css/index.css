@@ -668,7 +668,7 @@ button:hover {
   height: 30rem;
 }
 
-.star-box {
+.symbol-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -738,7 +738,6 @@ button:hover {
   cursor: pointer;
   background-size: 400%;
   border: transparent;
-  border-radius: 10rem;
   width: 80%;
 }
 
@@ -773,7 +772,6 @@ button:hover {
   cursor: pointer;
   background-size: 400%;
   border: transparent;
-  border-radius: 10rem;
   width: 80%;
 }
 
@@ -807,7 +805,6 @@ button:hover {
   cursor: pointer;
   background-size: 400%;
   border: transparent;
-  border-radius: 10rem;
   width: 80%;
 }
 
@@ -995,7 +992,7 @@ button:hover {
   }
   .hamburger {
     position: relative;
-    right: -2055%;
+    right: -40vw;
   }
   .explore-anchor {
     top: -25rem;
@@ -1004,10 +1001,6 @@ button:hover {
 }
 
 @media (max-width: 1000px) {
-  .hamburger {
-    position: relative;
-    right: -1855%;
-  }
   .section1 {
     justify-content: center;
     flex-direction: column;
@@ -1045,13 +1038,6 @@ button:hover {
   }
 }
 
-@media (max-width: 900px) {
-  .hamburger {
-    position: relative;
-    right: -1655%;
-  }
-}
-
 @media (max-width: 850px) {
   .header-text {
     font-size: 10rem;
@@ -1059,10 +1045,6 @@ button:hover {
   .header-subtext {
     font-size: 4rem;
     left: -8%;
-  }
-  .hamburger {
-    position: relative;
-    right: -1555%;
   }
 }
 
@@ -1086,11 +1068,6 @@ button:hover {
     font-size: 3.5rem;
     top: -3%;
   }
-
-  .hamburger {
-    position: relative;
-    right: -1455%;
-  }
   .fa-solid {
     position: relative;
     left: 20%;
@@ -1108,9 +1085,20 @@ button:hover {
     top: -3%;
     padding-left: 10rem;
   }
-  .hamburger {
-    position: relative;
-    right: -1200%;
+  .modal1-text {
+    font-size: 2.3vw;
+  }
+  .modal2-text {
+    font-size: 2.3vw;
+  }
+  .modal3-text {
+    font-size: 2.3vw;
+  }
+  .modal4-text {
+    font-size: 2.3vw;
+  }
+  .modal5-text {
+    font-size: 2.3vw;
   }
 }
 
@@ -1135,10 +1123,6 @@ button:hover {
     font-size: 2.6rem;
     top: -3%;
   }
-  .hamburger {
-    position: relative;
-    right: -1055%;
-  }
   .explore-anchor {
     top: -30rem;
     left: 50%;
@@ -1150,6 +1134,21 @@ button:hover {
     position: absolute;
     left: 15vw;
     font-size: 7vw;
+  }
+  .modal1-text {
+    font-size: 3vw;
+  }
+  .modal2-text {
+    font-size: 3vw;
+  }
+  .modal3-text {
+    font-size: 3vw;
+  }
+  .modal4-text {
+    font-size: 3vw;
+  }
+  .modal5-text {
+    font-size: 3vw;
   }
 }
 
@@ -1164,7 +1163,7 @@ button:hover {
   }
   .hamburger {
     position: relative;
-    right: -1055%;
+    right: -50vw;
   }
 }
 
@@ -1176,10 +1175,6 @@ button:hover {
   .header-subtext {
     font-size: 2.2rem;
     top: -6%;
-  }
-  .hamburger {
-    position: relative;
-    right: -900%;
   }
   .explore-anchor {
     top: -35rem;
@@ -1198,10 +1193,6 @@ button:hover {
     top: -7%;
     left: -1rem;
   }
-  .hamburger {
-    position: relative;
-    right: -900%;
-  }
 }
 
 @media (max-width: 413px) {
@@ -1213,12 +1204,12 @@ button:hover {
     font-size: 2rem;
     top: -8%;
   }
-  .hamburger {
-    position: relative;
-    right: -700%;
-  }
   .section1-header-text {
     font-size: 7vw;
+  }
+  .hamburger {
+    position: relative;
+    right: -55vw;
   }
 }
 
