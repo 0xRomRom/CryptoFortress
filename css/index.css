@@ -568,15 +568,27 @@ button:hover {
   overflow: hidden;
 }
 
-.section2-header-text {
+.section2-header-box {
   display: flex;
-  position: absolute;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 8vw;
+  flex-direction: column;
+  position: relative;
   left: 10vw;
   top: 15vh;
+}
+
+.section2-header-text {
+  display: flex;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 7vw;
   width: 100%;
+}
+
+.title-span {
+  font-size: 2.5vw;
+  font-family: "Montserrat", sans-serif;
+  z-index: 3;
+  color: white;
 }
 
 .power {
@@ -592,7 +604,7 @@ button:hover {
     color: white;
   }
   10% {
-    transform: translateY(-5px);
+    transform: translateY(-7px);
     position: relative;
     color: red;
   }
@@ -609,17 +621,66 @@ button:hover {
   }
 }
 
-.section2-header-subtext {
-  position: absolute;
-  display: flex;
-  justify-content: center;
+.section2-href-title {
+  position: relative;
   font-size: 2.5vw;
   font-family: "Montserrat", sans-serif;
   z-index: 3;
   color: white;
-  left: 10vw;
-  top: 60vh;
+  left: 14vw;
+  top: 40vh;
 }
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 15rem;
+  top: 40rem;
+  gap: 3rem;
+  height: 30rem;
+}
+
+.star-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.href-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.href-style {
+  font-size: 2.5vw;
+  font-family: "Montserrat", sans-serif;
+  z-index: 3;
+  color: white;
+}
+
+.links-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  top: 50vh;
+}
+
+.fa-circle-dollar {
+  font-size: 2.5vw;
+  font-family: "Montserrat", sans-serif;
+  z-index: 3;
+  color: white;
+  display: block;
+}
+
 /* |Section 2|  End */
 
 /* ///////////// */
