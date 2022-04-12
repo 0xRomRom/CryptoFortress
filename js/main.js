@@ -25,16 +25,22 @@ const modal2Text = document.querySelector(".modal2-text");
 const modal3Text = document.querySelector(".modal3-text");
 const modal4Text = document.querySelector(".modal4-text");
 const modal5Text = document.querySelector(".modal5-text");
+const continueButton = document.querySelector(".fa-circle-arrow-down");
 //Offset for fade in
 const section1Height = document.querySelector(".section1");
 const section2Height = document.querySelector(".section2");
 //Section 2 cta menu
 const ctaExchange = document.querySelector(".cta-exchange");
+const button1Padding = document.querySelector(".button1-padding");
 const ctaExchangeNote = document.querySelector(".exchange-sidenote");
+//
 const ctaAcademy = document.querySelector(".cta-academy");
+const button2Padding = document.querySelector(".button2-padding");
 const ctaAcademyNote = document.querySelector(".academy-sidenote");
+//
 const ctaLegion = document.querySelector(".cta-legion");
 const ctaLegionNote = document.querySelector(".legion-sidenote");
+const button3Padding = document.querySelector(".button3-padding");
 
 //Random headertext color function
 (function () {
@@ -78,11 +84,18 @@ window.addEventListener("scroll", () => {
   let contentTop = content.getBoundingClientRect().top;
   let contentBottom = content.getBoundingClientRect().bottom;
   let screenPosition = window.innerHeight;
-  contentTop < screenPosition
-    ? content.classList.add("active")
-    : content.classList.remove("active");
+  const continueButton = document.querySelector(".fa-circle-arrow-down");
+  if (contentTop < screenPosition) {
+    content.classList.add("active");
+  }
+  if (!(contentTop < screenPosition)) {
+    content.classList.remove("active");
+    continueButton.style.visibility = "hidden";
+  }
+
   if (contentBottom < 133) {
     content.classList.remove("active");
+    continueButton.style.visibility = "hidden";
   }
 });
 
@@ -92,13 +105,9 @@ window.addEventListener("scroll", () => {
   let contentTop = content.getBoundingClientRect().top;
   let contentBottom = content.getBoundingClientRect().bottom;
   let screenPosition = window.innerHeight;
-
   contentTop < screenPosition
     ? content.classList.add("active")
     : content.classList.remove("active");
-  // if (contentBottom < 133) {
-  //   content.classList.remove("active");
-  // }
 });
 
 // Hover modals
@@ -159,6 +168,7 @@ modal5Box.addEventListener("mouseover", () => {
   modal5.classList.add("modal5Animate");
   modal5Text.classList.add("opacity");
   modal5Text.style.visibility = "initial";
+  continueButton.style.visibility = "initial";
 });
 
 modal5Box.addEventListener("mouseleave", () => {
@@ -169,29 +179,35 @@ modal5Box.addEventListener("mouseleave", () => {
 
 // Section2
 
-ctaExchange.addEventListener("mouseover", () => {
+button1Padding.addEventListener("mouseover", () => {
   ctaExchangeNote.style.visibility = "initial";
   ctaExchangeNote.style.opacity = "1";
+  ctaExchange.style.color = "white";
 });
 
-ctaExchange.addEventListener("mouseleave", () => {
+button1Padding.addEventListener("mouseleave", () => {
   ctaExchangeNote.style.visibility = "hidden";
+  ctaExchange.style.color = "black";
 });
 
-ctaAcademy.addEventListener("mouseover", () => {
+button2Padding.addEventListener("mouseover", () => {
   ctaAcademyNote.style.visibility = "initial";
   ctaAcademyNote.style.opacity = "1";
+  ctaAcademy.style.color = "white";
 });
 
-ctaAcademy.addEventListener("mouseleave", () => {
+button2Padding.addEventListener("mouseleave", () => {
   ctaAcademyNote.style.visibility = "hidden";
+  ctaAcademy.style.color = "black";
 });
 
-ctaLegion.addEventListener("mouseover", () => {
+button3Padding.addEventListener("mouseover", () => {
   ctaLegionNote.style.visibility = "initial";
   ctaLegionNote.style.opacity = "1";
+  ctaLegion.style.color = "white";
 });
 
-ctaLegion.addEventListener("mouseleave", () => {
+button3Padding.addEventListener("mouseleave", () => {
   ctaLegionNote.style.visibility = "hidden";
+  ctaLegion.style.color = "black";
 });
