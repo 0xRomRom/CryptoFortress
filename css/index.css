@@ -1065,6 +1065,11 @@ button:hover {
   .hover-menu {
     height: 25rem;
   }
+  .continue-down {
+    position: relative;
+    top: 30vh;
+    left: -30vw;
+  }
 }
 
 @media (max-width: 850px) {
@@ -1136,6 +1141,15 @@ button:hover {
   .section1-header-text {
     font-size: 4.4rem;
   }
+  .continue-down {
+    position: relative;
+    top: 25vh;
+    left: -30vw;
+    font-size: 5rem;
+  }
+  .fa-circle-arrow-down {
+    font-size: 3.5rem;
+  }
 }
 
 @media (max-width: 562px) {
@@ -1149,6 +1163,11 @@ button:hover {
   }
   .modal-position {
     top: 25%;
+  }
+  .continue-down {
+    position: relative;
+    top: 20vh;
+    left: -30vw;
   }
 }
 
@@ -1167,6 +1186,11 @@ button:hover {
   }
   .modal-textsize {
     font-size: 3.5vw;
+  }
+  .continue-down {
+    position: relative;
+    top: 20vh;
+    left: -20vw;
   }
 }
 
