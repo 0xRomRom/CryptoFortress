@@ -231,8 +231,8 @@ button:hover {
 }
 
 .header-text {
-  font-size: 12rem;
-  font-family: "Press Start 2P", sans-serif;
+  font-size: 10vw;
+  font-family: "Montserrat", sans-serif;
   z-index: 3;
   color: white;
   animation: dropDown 0.5s 1 ease-in;
@@ -251,7 +251,7 @@ button:hover {
 
 .header-subtext {
   padding-left: 15rem;
-  font-size: 6rem;
+  font-size: 3.5vw;
   font-family: "Montserrat", sans-serif;
   z-index: 3;
   color: white;
@@ -272,7 +272,7 @@ button:hover {
 .explore-anchor {
   position: relative;
   top: -15rem;
-  left: 65%;
+  left: 50vw;
 }
 
 .btn1 {
@@ -328,7 +328,7 @@ button:hover {
   width: 100%;
   z-index: 1;
   min-height: 110rem;
-  padding-top: 15rem;
+  padding-top: 20rem;
   transform: scale(0.1);
   transition: all 1s ease-in-out;
   opacity: 0;
@@ -339,9 +339,9 @@ button:hover {
 .section1-header-text {
   position: absolute;
   top: 10%;
-  left: 20vw;
-  font-family: "Press Start 2P", sans-serif;
-  font-size: 6vw;
+  left: 30vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8vw;
   color: white;
   animation: dropDown 0.5s 1 ease-in, glowing1 1s ease-in-out infinite alternate;
   display: block;
@@ -405,6 +405,9 @@ button:hover {
   position: relative;
 }
 
+.modal-textsize {
+  font-size: 1.8vw;
+}
 /*Modal 1*/
 .modal1 {
   transition: all 0.5s ease-in-out;
@@ -594,7 +597,7 @@ button:hover {
 .section2-header-text {
   display: flex;
   color: white;
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 4vw;
   width: 100%;
 }
@@ -602,7 +605,7 @@ button:hover {
 .title-span {
   padding-top: 0.5rem;
   font-size: 1.25vw;
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Montserrat", sans-serif;
   z-index: 3;
   color: white;
 }
@@ -853,14 +856,17 @@ button:hover {
   a {
     font-size: 1.75rem;
   }
-  .header-text {
-    font-size: 10rem;
-  }
 }
 
 @media (max-width: 1700px) {
   .nav-links li {
     padding: 0rem 2.2rem;
+  }
+  .section1-header-text {
+    font-size: 10vw;
+  }
+  .section1-header-subtext {
+    font-size: 3vw;
   }
 }
 
@@ -870,12 +876,6 @@ button:hover {
   }
   a {
     font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 1520px) {
-  .header-text {
-    font-size: 8rem;
   }
 }
 
@@ -902,7 +902,7 @@ button:hover {
     padding: 0rem 0.6rem;
   }
   .section1-header-text {
-    top: 20%;
+    top: 10%;
   }
   .modal1-box {
     height: 3rem;
@@ -924,27 +924,9 @@ button:hover {
     height: 3rem;
     padding-top: 0rem;
   }
-  .header-text {
-    font-size: 8rem;
-  }
-  .header-text {
-    font-size: 7rem;
-    padding-bottom: 2rem;
-  }
-  .header-subtext {
-    font-size: 5.5rem;
-  }
 }
 
 @media (max-width: 1100px) {
-  .header-text {
-    font-size: 5.8rem;
-    padding-bottom: 2rem;
-  }
-  .header-subtext {
-    font-size: 3.8rem;
-    left: 0.3%;
-  }
   .hamburger {
     display: block;
   }
@@ -994,10 +976,6 @@ button:hover {
     position: relative;
     right: -40vw;
   }
-  .explore-anchor {
-    top: -25rem;
-    left: 65%;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -1018,23 +996,21 @@ button:hover {
     margin-right: -10rem;
   }
   .section1-header-text {
-    top: 15rem;
-    animation: none;
+    top: 15%;
+    /* animation: none; */
   }
   .hover-list {
     justify-content: center;
     gap: 1.5rem;
   }
-}
-
-@media (max-width: 930px) {
-  .header-text {
-    font-size: 10vw;
-    left: 10vw;
+  .explore-anchor {
+    left: 40vw;
   }
-  .header-subtext {
-    font-size: 4.5rem;
-    left: -4%;
+  .modal-textsize {
+    font-size: 2vw;
+  }
+  .hover-menu {
+    height: 25rem;
   }
 }
 
@@ -1085,20 +1061,18 @@ button:hover {
     top: -3%;
     padding-left: 10rem;
   }
-  .modal1-text {
+  .modal-textsize {
     font-size: 2.3vw;
   }
-  .modal2-text {
-    font-size: 2.3vw;
+  .explore-anchor {
+    left: 30vw;
+    top: -30vh;
   }
-  .modal3-text {
-    font-size: 2.3vw;
-  }
-  .modal4-text {
-    font-size: 2.3vw;
-  }
-  .modal5-text {
-    font-size: 2.3vw;
+  .btn1 {
+    padding: 1rem 2rem;
+    color: rgb(54, 11, 11);
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 }
 
@@ -1123,32 +1097,8 @@ button:hover {
     font-size: 2.6rem;
     top: -3%;
   }
-  .explore-anchor {
-    top: -30rem;
-    left: 50%;
-  }
   .modal-position {
     top: 25%;
-  }
-  .section1-header-text {
-    position: absolute;
-    left: 15vw;
-    font-size: 7vw;
-  }
-  .modal1-text {
-    font-size: 3vw;
-  }
-  .modal2-text {
-    font-size: 3vw;
-  }
-  .modal3-text {
-    font-size: 3vw;
-  }
-  .modal4-text {
-    font-size: 3vw;
-  }
-  .modal5-text {
-    font-size: 3vw;
   }
 }
 
@@ -1165,20 +1115,19 @@ button:hover {
     position: relative;
     right: -50vw;
   }
+  .modal-textsize {
+    font-size: 3.5vw;
+  }
 }
 
 @media (max-width: 470px) {
   .header-text {
-    font-size: 5rem;
+    font-size: 5.5rem;
     top: -5rem;
   }
   .header-subtext {
     font-size: 2.2rem;
     top: -6%;
-  }
-  .explore-anchor {
-    top: -35rem;
-    left: 40%;
   }
 }
 
@@ -1205,7 +1154,8 @@ button:hover {
     top: -8%;
   }
   .section1-header-text {
-    font-size: 7vw;
+    font-size: 12vw;
+    left: 15vw;
   }
   .hamburger {
     position: relative;
