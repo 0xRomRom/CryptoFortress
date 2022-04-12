@@ -1005,6 +1005,7 @@ button:hover {
   }
   .explore-anchor {
     left: 40vw;
+    top: -30vh;
   }
   .modal-textsize {
     font-size: 2vw;
@@ -1064,10 +1065,7 @@ button:hover {
   .modal-textsize {
     font-size: 2.3vw;
   }
-  .explore-anchor {
-    left: 30vw;
-    top: -30vh;
-  }
+
   .btn1 {
     padding: 1rem 2rem;
     color: rgb(54, 11, 11);
@@ -1128,6 +1126,10 @@ button:hover {
   .header-subtext {
     font-size: 2.2rem;
     top: -6%;
+  }
+  .explore-anchor {
+    left: 30vw;
+    top: -35vh;
   }
 }
 
