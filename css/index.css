@@ -592,7 +592,7 @@ button:hover {
 /* |Section 2| Start */
 .section2 {
   position: relative;
-  min-height: 120rem;
+  min-height: 100rem;
   /* border-top: 5px solid white; */
   overflow: hidden;
   transform: scale(0.1);
@@ -611,14 +611,14 @@ button:hover {
   flex-direction: column;
   position: relative;
   left: 10vw;
-  top: 15vh;
+  top: 10vh;
 }
 
 .section2-header-text {
   display: flex;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 4vw;
+  font-size: 7vw;
   width: 100%;
 }
 
@@ -661,18 +661,14 @@ button:hover {
 }
 
 .section2-content {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  padding-left: 10rem;
-  top: 30vh;
-  gap: 5rem;
 }
 
 .section2-description-box {
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 30vh;
+  left: 5vw;
 }
 
 .section2-href-title {
@@ -680,15 +676,19 @@ button:hover {
   font-family: "Montserrat", sans-serif;
   z-index: 3;
   color: white;
-  padding-bottom: 5rem;
-  padding-left: 8.5rem;
+  text-decoration: underline;
+  position: relative;
+  top: 27vh;
+  left: 15vw;
 }
 
 .bottom-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 3rem;
   height: 30rem;
+  top: 5vh;
 }
 
 .symbol-box {
@@ -712,8 +712,17 @@ button:hover {
   color: white;
 }
 
-.sec2-modal-box {
-  /*Placeholder for Flexbox functionality */
+@keyframes glowingWhite {
+  from {
+    text-shadow: 0 0 0px rgb(255, 254, 254);
+  }
+  to {
+    text-shadow: 0 0 30px rgb(0, 0, 0);
+  }
+}
+
+.hover-glow {
+  animation: glowingWhite 1s ease-in-out infinite;
 }
 
 .option-menu {
@@ -729,6 +738,9 @@ button:hover {
   z-index: 1000;
   border: 3px solid red;
   animation: glowingOption 15s linear infinite;
+  position: relative;
+  left: 65vw;
+  top: -10vh;
 }
 
 @keyframes glowingOption {
@@ -783,8 +795,8 @@ button:hover {
   font-weight: 700;
   font-family: "Press Start 2P", sans-serif;
   opacity: 0;
-  width: 80%;
-  padding-top: 1rem;
+  width: 100%;
+  padding-left: 2vw;
 }
 
 .option2 {
@@ -825,7 +837,6 @@ button:hover {
   font-weight: 700;
   font-family: "Press Start 2P", sans-serif;
   opacity: 0;
-  padding-top: 1rem;
 }
 
 .option3 {
@@ -913,6 +924,9 @@ button:hover {
   .section1-header-subtext {
     font-size: 3vw;
   }
+  .option-menu {
+    width: 25vw;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -930,6 +944,32 @@ button:hover {
   }
   a {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .cta-exchange {
+    font-size: 1.1vw;
+  }
+  .cta-academy {
+    font-size: 1.4vw;
+  }
+
+  .cta-legion {
+    font-size: 1.5vw;
+  }
+  .option-menu {
+    width: 30vw;
+  }
+  .section2-href-title {
+    top: 30vh;
+    font-size: 3.2vw;
+  }
+  .section2-header-text {
+    font-size: 8.5vw;
+  }
+  .title-span {
+    font-size: 2vw;
   }
 }
 
@@ -1028,6 +1068,21 @@ button:hover {
   .hide-note {
     display: none;
   }
+  .option-menu {
+    top: -6vh;
+    left: 62vw;
+    height: 40rem;
+    width: 35rem;
+  }
+  .cta-exchange {
+    color: white;
+  }
+  .cta-academy {
+    color: white;
+  }
+  .cta-legion {
+    color: white;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1036,9 +1091,6 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    min-height: 100rem;
-  }
-  .section2 {
     min-height: 100rem;
   }
   .hover-menu {
@@ -1069,6 +1121,32 @@ button:hover {
     position: relative;
     top: 30vh;
     left: -30vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .section2 {
+    min-height: 140rem;
+  }
+  .option-menu {
+    left: 25vw;
+    top: 40vh;
+  }
+  .bottom-container {
+    left: 5vw;
+  }
+  .section2-header-text {
+    font-size: 8.5vw;
+  }
+  .section2-href-title {
+    left: 25vw;
+    font-size: 6vw;
+  }
+  .href-style {
+    font-size: 4vw;
+  }
+  .cta-size {
+    font-size: 2.3vw;
   }
 }
 
@@ -1129,6 +1207,9 @@ button:hover {
     font-size: 1.5rem;
     font-weight: 700;
   }
+  .title-span {
+    font-size: 2.5vw;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1168,6 +1249,29 @@ button:hover {
     position: relative;
     top: 20vh;
     left: -30vw;
+    .href-style {
+      font-size: 4vw;
+    }
+  }
+  .cta-size {
+    font-size: 2.8vw;
+  }
+  .option-menu {
+    left: 25vw;
+    top: 30vh;
+    height: 35rem;
+    width: 30rem;
+  }
+  .section2-href-title {
+    top: 23vh;
+    left: 10vw;
+    font-size: 7vw;
+  }
+  .bottom-container {
+    top: -5vh;
+  }
+  .section2 {
+    min-height: 120rem;
   }
 }
 
@@ -1192,6 +1296,18 @@ button:hover {
     top: 20vh;
     left: -20vw;
   }
+  .title-span {
+    font-size: 3vw;
+  }
+  .cta-size {
+    font-size: 3.6vw;
+  }
+  .option-menu {
+    left: 16vw;
+  }
+  .href-style {
+    font-size: 4vw;
+  }
 }
 
 @media (max-width: 470px) {
@@ -1206,6 +1322,16 @@ button:hover {
   .explore-anchor {
     left: 30vw;
     top: -35vh;
+  }
+  .section2-href-title {
+    font-size: 8vw;
+  }
+  .href-style {
+    font-size: 4.5vw;
+  }
+  .bottom-container {
+    gap: 0;
+    left: -1vw;
   }
 }
 
@@ -1238,6 +1364,9 @@ button:hover {
   .hamburger {
     position: relative;
     right: -55vw;
+  }
+  .option-menu {
+    left: 13vw;
   }
 }
 

@@ -33,14 +33,17 @@ const section2Height = document.querySelector(".section2");
 const ctaExchange = document.querySelector(".cta-exchange");
 const button1Padding = document.querySelector(".button1-padding");
 const ctaExchangeNote = document.querySelector(".exchange-sidenote");
+const signUpSpan = document.querySelector(".sec2-span1");
 //
 const ctaAcademy = document.querySelector(".cta-academy");
 const button2Padding = document.querySelector(".button2-padding");
 const ctaAcademyNote = document.querySelector(".academy-sidenote");
+const getEducatedSpan = document.querySelector(".sec2-span2");
 //
 const ctaLegion = document.querySelector(".cta-legion");
 const ctaLegionNote = document.querySelector(".legion-sidenote");
 const button3Padding = document.querySelector(".button3-padding");
+const becomePartSpan = document.querySelector(".sec2-span3");
 
 //Random headertext color function
 (function () {
@@ -183,31 +186,37 @@ button1Padding.addEventListener("mouseover", () => {
   ctaExchangeNote.style.visibility = "initial";
   ctaExchangeNote.style.opacity = "1";
   ctaExchange.style.color = "white";
+  signUpSpan.classList.add("hover-glow");
 });
 
 button1Padding.addEventListener("mouseleave", () => {
   ctaExchangeNote.style.visibility = "hidden";
   ctaExchange.style.color = "black";
+  signUpSpan.classList.remove("hover-glow");
 });
 
 button2Padding.addEventListener("mouseover", () => {
   ctaAcademyNote.style.visibility = "initial";
   ctaAcademyNote.style.opacity = "1";
   ctaAcademy.style.color = "white";
+  getEducatedSpan.classList.add("hover-glow");
 });
 
 button2Padding.addEventListener("mouseleave", () => {
   ctaAcademyNote.style.visibility = "hidden";
   ctaAcademy.style.color = "black";
+  getEducatedSpan.classList.remove("hover-glow");
 });
 
 button3Padding.addEventListener("mouseover", () => {
   ctaLegionNote.style.visibility = "initial";
   ctaLegionNote.style.opacity = "1";
   ctaLegion.style.color = "white";
+  becomePartSpan.classList.add("hover-glow");
 });
 
 button3Padding.addEventListener("mouseleave", () => {
   ctaLegionNote.style.visibility = "hidden";
   ctaLegion.style.color = "black";
+  becomePartSpan.classList.remove("hover-glow");
 });
