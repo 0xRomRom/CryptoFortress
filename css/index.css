@@ -310,11 +310,11 @@ button:hover {
 /* |Section 1| Start */
 
 #explore {
-  position: absolute;
+  position: relative;
   left: 50%;
   width: 20px;
   height: 20px;
-  top: 110rem;
+  top: 0rem;
   background: transparent;
 }
 
@@ -588,7 +588,8 @@ button:hover {
   left: 20%;
   font-size: 2vw;
 }
-/* |Section 1|  End */
+/* |Section 1|  End  */
+/*                   */
 /* |Section 2| Start */
 .section2 {
   position: relative;
@@ -901,8 +902,14 @@ button:hover {
 }
 
 /* |Section 2|  End */
+/*                  */
+/* |Footer Start|   */
 
-/* ///////////// */
+.footer-content {
+  min-height: 60rem;
+  background: red;
+}
+
 /* Media Queries */
 
 @media (max-width: 1810px) {
@@ -1119,7 +1126,7 @@ button:hover {
   }
   .continue-down {
     position: relative;
-    top: 30vh;
+    top: 15vh;
     left: -30vw;
   }
 }
@@ -1137,6 +1144,9 @@ button:hover {
   }
   .section2-header-text {
     font-size: 8.5vw;
+  }
+  .section2-header-box {
+    left: 5vw;
   }
   .section2-href-title {
     left: 25vw;
@@ -1224,12 +1234,15 @@ button:hover {
   }
   .continue-down {
     position: relative;
-    top: 25vh;
+    top: 15vh;
     left: -30vw;
     font-size: 5rem;
   }
   .fa-circle-arrow-down {
     font-size: 3.5rem;
+  }
+  #explore {
+    top: 8rem;
   }
 }
 
@@ -1246,13 +1259,12 @@ button:hover {
     top: 25%;
   }
   .continue-down {
-    position: relative;
-    top: 20vh;
     left: -30vw;
-    .href-style {
-      font-size: 4vw;
-    }
   }
+  .href-style {
+    font-size: 4vw;
+  }
+
   .cta-size {
     font-size: 2.8vw;
   }
@@ -1302,9 +1314,7 @@ button:hover {
   .cta-size {
     font-size: 3.6vw;
   }
-  .option-menu {
-    left: 16vw;
-  }
+
   .href-style {
     font-size: 4vw;
   }
