@@ -904,10 +904,124 @@ button:hover {
 /* |Section 2|  End */
 /*                  */
 /* |Footer Start|   */
+footer {
+  width: 100%;
+  overflow: hidden;
+}
 
 .footer-content {
-  min-height: 60rem;
-  background: red;
+  height: 100rem;
+  background-image: url("../img/chart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.footer-text-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  left: 25vw;
+  top: 50vh;
+}
+
+.footer-span {
+  display: flex;
+  justify-content: center;
+}
+.footer-text {
+  color: white;
+  z-index: 100000;
+  font-size: 3vw;
+  font-family: "Montserrat", sans-serif;
+}
+.copyright {
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 500;
+  font-size: 1.25vw;
+  position: relative;
+  bottom: -85rem;
+  left: 70vw;
+}
+.footer-icon {
+  color: white;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: left;
+  gap: 6rem;
+  width: 100%;
+  padding-left: 17rem;
+}
+
+.fa-people-group {
+  animation: alternateGreen 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes alternateGreen {
+  0% {
+    color: white;
+  }
+  10% {
+    color: green;
+  }
+  20% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.fa-heart {
+  animation: alternateRed 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes alternateRed {
+  0% {
+    color: white;
+  }
+  20% {
+    color: rgb(255, 255, 255);
+  }
+  30% {
+    color: rgb(255, 0, 0);
+  }
+  40% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.fa-arrow-trend-up {
+  animation: alternateBlue 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes alternateBlue {
+  0% {
+    color: white;
+  }
+  40% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(31, 2, 199);
+  }
+  60% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
 }
 
 /* Media Queries */
@@ -934,6 +1048,9 @@ button:hover {
   .option-menu {
     width: 25vw;
   }
+  .icon-box {
+    padding-left: 15rem;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -943,6 +1060,9 @@ button:hover {
   a {
     font-size: 1.5rem;
   }
+  .icon-box {
+    padding-left: 13rem;
+  }
 }
 
 @media (max-width: 1460px) {
@@ -951,6 +1071,13 @@ button:hover {
   }
   a {
     font-size: 1.5rem;
+  }
+  .icon-box {
+    padding-left: 10rem;
+  }
+  .footer-text-box {
+    gap: 2rem;
+    top: 45vh;
   }
 }
 
@@ -990,6 +1117,9 @@ button:hover {
   .legion-sidenote {
     font-size: 1.5rem;
     padding-left: 6rem;
+  }
+  .icon-box {
+    padding-left: 8rem;
   }
 }
 
@@ -1158,6 +1288,19 @@ button:hover {
   .cta-size {
     font-size: 2.3vw;
   }
+  .footer-content {
+    height: 40rem;
+  }
+  .copyright {
+    font-size: 1.2vw;
+    top: 30vh;
+  }
+  .footer-text-box {
+    top: 15vh;
+  }
+  .icon-box {
+    padding-left: 5rem;
+  }
 }
 
 @media (max-width: 850px) {
@@ -1178,6 +1321,9 @@ button:hover {
   .header-subtext {
     font-size: 4rem;
     top: -3%;
+  }
+  .icon-box {
+    gap: 3rem;
   }
 }
 
@@ -1210,7 +1356,6 @@ button:hover {
   .modal-textsize {
     font-size: 2.3vw;
   }
-
   .btn1 {
     padding: 1rem 2rem;
     color: rgb(54, 11, 11);
@@ -1219,6 +1364,9 @@ button:hover {
   }
   .title-span {
     font-size: 2.5vw;
+  }
+  .icon-box {
+    padding-left: 3rem;
   }
 }
 
@@ -1264,7 +1412,6 @@ button:hover {
   .href-style {
     font-size: 4vw;
   }
-
   .cta-size {
     font-size: 2.8vw;
   }
@@ -1284,6 +1431,13 @@ button:hover {
   }
   .section2 {
     min-height: 120rem;
+  }
+  .copyright {
+    left: 35%;
+    font-size: 1.8vw;
+  }
+  .icon-box {
+    padding-left: 1rem;
   }
 }
 
