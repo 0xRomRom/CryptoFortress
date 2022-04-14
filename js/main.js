@@ -84,10 +84,10 @@ hamburger.addEventListener("click", () => {
 //Section1 fade in/out
 window.addEventListener("scroll", () => {
   const content = document.querySelector(".section1");
+  const continueButton = document.querySelector(".fa-circle-arrow-down");
   let contentTop = content.getBoundingClientRect().top;
   let contentBottom = content.getBoundingClientRect().bottom;
   let screenPosition = window.innerHeight;
-  const continueButton = document.querySelector(".fa-circle-arrow-down");
   if (contentTop < screenPosition) {
     content.classList.add("active");
   }
@@ -108,6 +108,7 @@ window.addEventListener("scroll", () => {
   let contentTop = content.getBoundingClientRect().top;
   let contentBottom = content.getBoundingClientRect().bottom;
   let screenPosition = window.innerHeight;
+  console.log(screenPosition);
   contentTop < screenPosition
     ? content.classList.add("active")
     : content.classList.remove("active");
