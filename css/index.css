@@ -963,6 +963,11 @@ footer {
   animation-iteration-count: infinite;
 }
 
+.embrace {
+  animation: alternateGreen 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
 @keyframes alternateGreen {
   0% {
     color: white;
@@ -979,6 +984,11 @@ footer {
 }
 
 .fa-heart {
+  animation: alternateRed 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.opportunity {
   animation: alternateRed 6s 1s ease-in-out forwards;
   animation-iteration-count: infinite;
 }
@@ -1002,6 +1012,11 @@ footer {
 }
 
 .fa-arrow-trend-up {
+  animation: alternateBlue 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.together {
   animation: alternateBlue 6s 1s ease-in-out forwards;
   animation-iteration-count: infinite;
 }
