@@ -62,23 +62,6 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   joinUsBtn.classList.toggle("opacity");
-  navMenu.innerHTML = `<li class="nav-link">
-      <a href="#" class="underline">Home</a>
-    </li>
-    <li class="nav-link">
-      <a href="#" class="underline">Crypto News</a>
-    </li>
-    <li class="nav-link">
-      <a href="#" class="underline">Academy</a>
-    </li>
-    <li class="nav-link">
-      <a href="#" class="underline">Project Review</a>
-    </li><li class="nav-link">
-    <a href="#" class="underline">Quick Links</a>
-  </li><li class="nav-link">
-  <a href="#" class="underline">Join us</a>
-  </li>
-    `;
 });
 
 //Section1 fade in/out

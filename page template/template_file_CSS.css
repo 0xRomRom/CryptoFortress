@@ -21,16 +21,6 @@ html {
 .hidden {
   display: none;
 }
-.visibility {
-  visibility: hidden;
-}
-
-.hide-link {
-  position: absolute;
-  left: 50vw;
-  visibility: hidden;
-  display: none;
-}
 
 .opacity {
   opacity: 1;
@@ -1244,11 +1234,6 @@ footer {
   }
   .cta-legion {
     color: white;
-  }
-  .append-link {
-    position: static;
-    visibility: visible;
-    display: initial;
   }
 }
 
