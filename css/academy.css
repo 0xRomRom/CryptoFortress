@@ -226,20 +226,36 @@ button:hover {
 /* |Front page|  Start */
 
 .academy-title {
-  font-family: "Turret Road", cursive;
-  color: white;
-  text-shadow: 3px 3px 3px black;
   position: relative;
   height: 40rem;
   background: rgb(245, 0, 0);
   width: 100%;
-  font-size: 3vw;
-  font-weight: 500;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   padding-top: 7rem;
+}
+
+.academy-header-text {
+  font-family: "Turret Road", cursive;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  width: 100%;
+  font-size: 7.6vw;
+  font-weight: 500;
+  padding-left: 1rem;
+}
+
+.academy-header-subtext {
+  font-family: "Turret Road", cursive;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  width: 100%;
+  font-size: 2.7vw;
+  font-weight: 500;
+  padding-left: 7rem;
 }
 
 .content {
@@ -608,6 +624,9 @@ button:hover {
     left: 20%;
     font-size: 3.5vw;
   }
+  .academy-header-subtext {
+    padding-left: 5rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -624,6 +643,10 @@ button:hover {
   }
   .content {
     height: 90rem;
+  }
+
+  .academy-title {
+    font-size: 3.8vw;
   }
 }
 
@@ -645,6 +668,13 @@ button:hover {
   .content {
     margin-top: 5rem;
     height: 70rem;
+  }
+  .academy-header-text {
+    padding-left: 0.5rem;
+  }
+  .academy-header-subtext {
+    padding-left: 2rem;
+    font-size: 5vw;
   }
 }
 
