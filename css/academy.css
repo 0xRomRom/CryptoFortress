@@ -280,6 +280,21 @@ button:hover {
   width: 100%;
 }
 
+/* .academy-inner {
+  position: relative;
+  width: 50rem;
+  height: 50rem;
+  background: white;
+} */
+
+.insert-button {
+  font-size: 1vw;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 500;
+  color: black;
+  line-height: 3rem;
+}
+
 .arcade-machine1 {
   position: relative;
   width: 100vw;
@@ -593,6 +608,12 @@ button:hover {
   }
 }
 
+@media (max-width: 1000px) {
+  .academy-header-text {
+    font-size: 7.5vw;
+  }
+}
+
 @media (max-width: 950px) {
   .bottom-container {
     left: 5vw;
@@ -644,9 +665,11 @@ button:hover {
   .content {
     height: 90rem;
   }
-
-  .academy-title {
-    font-size: 3.8vw;
+  .academy-header-text {
+    font-size: 7vw;
+  }
+  .academy-header-subtext {
+    padding-left: 2rem;
   }
 }
 
@@ -671,10 +694,11 @@ button:hover {
   }
   .academy-header-text {
     padding-left: 0.5rem;
+    font-size: 7vw;
   }
   .academy-header-subtext {
-    padding-left: 2rem;
-    font-size: 5vw;
+    padding-left: 1rem;
+    font-size: 4.5vw;
   }
 }
 
