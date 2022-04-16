@@ -1,0 +1,670 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap");
+
+/* Setting defaults */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: black;
+  /* 1rem = 10px */
+}
+
+/* General hide classes */
+.hidden {
+  display: none;
+}
+.visibility {
+  visibility: hidden;
+}
+
+.hide-link {
+  position: absolute;
+  left: 50vw;
+  visibility: hidden;
+  display: none;
+}
+
+.opacity {
+  opacity: 1;
+  animation: glowing 20s linear infinite, fadeIn 1s 0s 1;
+}
+
+/* |Front page| Nav-bar Section Start*/
+
+header {
+  overflow: hidden;
+}
+
+.nav-section {
+  position: fixed;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem, 10%;
+  z-index: 10000;
+}
+
+.nav-section > img,
+nav,
+a,
+button {
+  cursor: pointer;
+}
+
+li,
+a,
+button {
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.cflogo {
+  margin-left: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0rem 3.5rem;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #dc1fff;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ffa3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cta1 {
+  margin: 0rem 3.5rem 0rem 0rem;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50px;
+  z-index: 3;
+}
+
+button {
+  padding: 1rem 2.5rem;
+  color: black;
+  background-image: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: relative;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: 1000;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite, fadeOut 1s 0s 1;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px;
+  border: transparent;
+  font-weight: 700;
+}
+
+button:hover {
+  color: black;
+  filter: blur(0px);
+  animation: glowing 20s linear infinite, fadeIn 1s 0s 1;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    filter: blur(5px);
+  }
+  50% {
+    filter: blur(2.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    filter: blur(0px);
+  }
+  50% {
+    filter: blur(2.5px);
+  }
+  100% {
+    filter: blur(5px);
+  }
+}
+
+/*Dropdown menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 4;
+  position: relative;
+  right: -755%;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+/* |Front page| Nav-bar Section End */
+
+/* |Front page|  Start */
+
+.academy-title {
+  font-family: "Turret Road", cursive;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  position: relative;
+  height: 40rem;
+  background: rgb(245, 0, 0);
+  width: 100%;
+  font-size: 3vw;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+.content {
+  height: 142rem;
+  position: relative;
+  background: black;
+  color: white;
+  font-size: 4vw;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 10rem;
+}
+
+.academy-content {
+  top: 0vh;
+  position: absolute;
+  height: 160rem;
+  width: 100%;
+}
+
+.arcade-machine1 {
+  position: relative;
+  width: 100vw;
+  left: -1vw;
+}
+
+.arcade-machine2 {
+  position: relative;
+  width: 200vw;
+  left: -11vw;
+}
+/* |Front page|  End */
+/*                   */
+/* |Footer Start|    */
+
+.footer-content {
+  height: 100rem;
+  background-image: url("../img/chart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.footer-text-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  left: 25vw;
+  top: 50vh;
+}
+
+.footer-span {
+  display: flex;
+  justify-content: center;
+}
+.footer-text {
+  color: white;
+  z-index: 100000;
+  font-size: 3vw;
+  font-family: "Montserrat", sans-serif;
+}
+.copyright {
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 500;
+  font-size: 1.25vw;
+  position: relative;
+  bottom: -85rem;
+  left: 70vw;
+}
+.footer-icon {
+  color: white;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: left;
+  gap: 6rem;
+  width: 100%;
+  padding-left: 17rem;
+}
+
+.fa-people-group {
+  animation: alternateGreen 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.embrace {
+  animation: alternateGreen 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+.fa-solid {
+  position: relative;
+  left: 20%;
+  font-size: 2vw;
+}
+
+@keyframes alternateGreen {
+  0% {
+    color: white;
+  }
+  10% {
+    color: green;
+  }
+  20% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.fa-heart {
+  animation: alternateRed 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.opportunity {
+  animation: alternateRed 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes alternateRed {
+  0% {
+    color: white;
+  }
+  20% {
+    color: rgb(255, 255, 255);
+  }
+  30% {
+    color: rgb(255, 0, 0);
+  }
+  40% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.fa-arrow-trend-up {
+  animation: alternateBlue 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.together {
+  animation: alternateBlue 6s 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes alternateBlue {
+  0% {
+    color: white;
+  }
+  40% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(31, 2, 199);
+  }
+  60% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 1810px) {
+  .nav-links li {
+    padding: 0rem 2.5rem;
+  }
+  a {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 1700px) {
+  .nav-links li {
+    padding: 0rem 2.2rem;
+  }
+  .content {
+    height: 135rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .nav-links li {
+    padding: 0rem 1.8rem;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .arcade-machine1 {
+    position: relative;
+    width: 110vw;
+    left: -6.5vw;
+  }
+}
+
+@media (max-width: 1460px) {
+  .nav-links li {
+    padding: 0rem 1.8rem;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+  .icon-box {
+    padding-left: 10rem;
+  }
+  .footer-text-box {
+    gap: 2rem;
+    top: 45vh;
+  }
+  .content {
+    height: 115rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .nav-links li {
+    padding: 0rem 1.7rem;
+  }
+  a {
+    font-size: 1.3rem;
+  }
+  .icon-box {
+    padding-left: 8rem;
+  }
+  .content {
+    height: 105rem;
+  }
+}
+
+@media (max-width: 1220px) {
+  .nav-links li {
+    padding: 0rem 0.6rem;
+  }
+  .academy-content {
+    top: 5vh;
+    position: absolute;
+    height: 160rem;
+    width: 100%;
+  }
+  .content {
+    height: 150rem;
+  }
+  .arcade-machine1 {
+    display: none;
+    position: absolute;
+    width: 180vw;
+    left: -40vw;
+  }
+  .arcade-machine2 {
+    position: relative;
+    left: -47.5vw;
+    width: 195vw;
+    height: 70vh;
+    visibility: visible;
+    display: initial;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .underline {
+    color: black;
+  }
+  .nav-link {
+    margin: 16px 0;
+  }
+  .nav-links.active {
+    padding-top: 10rem;
+    left: 0;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    gap: 3%;
+  }
+  .cflogo {
+    width: 7rem;
+    padding-bottom: 1rem;
+  }
+  .cta1,
+  button {
+    visibility: hidden;
+  }
+  .hamburger {
+    position: relative;
+    right: -40vw;
+  }
+  .hide-note {
+    display: none;
+  }
+  .append-link {
+    position: static;
+    visibility: visible;
+    display: initial;
+  }
+  .content {
+    height: 130rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .bottom-container {
+    left: 5vw;
+  }
+  .footer-content {
+    height: 45rem;
+  }
+  .copyright {
+    font-size: 1.2vw;
+    top: 33rem;
+  }
+  .footer-text-box {
+    top: 15vh;
+  }
+  .icon-box {
+    padding-left: 5rem;
+  }
+  .content {
+    height: 115rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .icon-box {
+    gap: 3rem;
+  }
+  .fa-solid {
+    position: relative;
+    left: 20%;
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .icon-box {
+    padding-left: 3rem;
+  }
+  .content {
+    height: 150rem;
+  }
+  .arcade-machine1 {
+    position: relative;
+    width: 190vw;
+    left: -45vw;
+  }
+  .content {
+    height: 90rem;
+  }
+}
+
+@media (max-width: 562px) {
+  .copyright {
+    left: 35%;
+    font-size: 1.8vw;
+  }
+  .icon-box {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hamburger {
+    position: relative;
+    right: -50vw;
+  }
+  .content {
+    margin-top: 5rem;
+    height: 70rem;
+  }
+}
+
+@media (max-width: 413px) {
+  .hamburger {
+    position: relative;
+    right: -55vw;
+  }
+}
+
+@media (max-width: 310px) {
+  .hamburger {
+    position: relative;
+    right: -550%;
+  }
+}
+
+@media (max-width: 250px) {
+  .hamburger {
+    position: relative;
+    right: -400%;
+  }
+}
