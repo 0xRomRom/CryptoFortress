@@ -282,9 +282,10 @@ button:hover {
 
 .academy-inner {
   position: relative;
-  top: -13vh;
+  top: -11vh;
   left: 1vw;
   width: 48vw;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,7 +297,6 @@ button:hover {
   font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
   color: white;
-  padding-left: 3rem;
 }
 
 .arcade-machine1 {
