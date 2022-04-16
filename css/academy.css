@@ -280,19 +280,23 @@ button:hover {
   width: 100%;
 }
 
-/* .academy-inner {
+.academy-inner {
   position: relative;
-  width: 50rem;
-  height: 50rem;
-  background: white;
-} */
+  top: -13vh;
+  left: 1vw;
+  width: 48vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-.insert-button {
-  font-size: 1vw;
+.text-call1 {
+  font-size: 3vw;
   font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
-  color: black;
-  line-height: 3rem;
+  color: white;
+  padding-left: 3rem;
 }
 
 .arcade-machine1 {
@@ -306,6 +310,28 @@ button:hover {
   width: 200vw;
   left: -11vw;
 }
+
+.start-button {
+  position: absolute;
+  top: 83vh;
+  left: 18vw;
+  padding: 1.25rem 1.75rem;
+  font-size: 2.5vw;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 600;
+  border: 7px solid black;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skewX(-35deg);
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(8, 248, 8, 0.2);
+}
+
+.start-button:hover {
+  background: rgba(8, 248, 8, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
 /* |Front page|  End */
 /*                   */
 /* |Footer Start|    */
@@ -720,5 +746,184 @@ button:hover {
   .hamburger {
     position: relative;
     right: -400%;
+  }
+}
+
+/* Seperate media queries for machine layout */
+
+@media (max-width: 1900px) {
+  .start-button {
+    top: 80vh;
+    left: 18vw;
+    padding: 1.25rem 1.75rem;
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 1850px) {
+  .start-button {
+    top: 78vh;
+    left: 18vw;
+    padding: 1.25rem 1.75rem;
+    font-size: 2.5vw;
+  }
+  .academy-inner {
+    top: -17vh;
+    left: 1vw;
+  }
+}
+@media (max-width: 1800px) {
+  .start-button {
+    top: 76vh;
+    left: 18vw;
+    padding: 1rem 1.5rem;
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 1750px) {
+  .start-button {
+    top: 74vh;
+    left: 18vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+}
+
+@media (max-width: 1700px) {
+  .start-button {
+    top: 72vh;
+    left: 18vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+}
+
+@media (max-width: 1650px) {
+  .start-button {
+    top: 70vh;
+    left: 18vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+}
+
+@media (max-width: 1600px) {
+  .start-button {
+    top: 68vh;
+    left: 18vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+  .academy-inner {
+    top: -21vh;
+    left: 1vw;
+  }
+}
+
+@media (max-width: 1550px) {
+  .start-button {
+    top: 66vh;
+    left: 18vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+}
+
+@media (max-width: 1500px) {
+  .start-button {
+    top: 71vh;
+    left: 14vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+}
+
+@media (max-width: 1465px) {
+  .academy-inner {
+    top: -13vh;
+    left: 1vw;
+  }
+}
+
+@media (max-width: 1450px) {
+  .start-button {
+    top: 69vh;
+    left: 13vw;
+    padding: 0.5rem 1rem;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 1400px) {
+  .start-button {
+    top: 67vh;
+    left: 13vw;
+    padding: 0.5rem 1rem;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 1350px) {
+  .start-button {
+    top: 64vh;
+    left: 13vw;
+    padding: 0.5rem 1rem;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 1300px) {
+  .start-button {
+    top: 61.5vh;
+    left: 13vw;
+    padding: 0.5rem 1rem;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 1250px) {
+  .start-button {
+    top: 59vh;
+    left: 13vw;
+    padding: 0.5rem 1rem;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 1230px) {
+  .start-button {
+    top: 61.5vh;
+    left: 13vw;
+    font-size: 2.25vw;
+  }
+  .academy-inner {
+    top: -32vh;
+    width: 56vw;
+    left: 0vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  .academy-inner {
+    top: -22vh;
+    width: 56vw;
+    left: 0vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .academy-inner {
+    top: -15vh;
+    width: 56vw;
+    left: 0vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .academy-inner {
+    top: -2vh;
+    width: 56vw;
+    left: 0vw;
+  }
+}
+@media (max-width: 500px) {
+  .academy-inner {
+    top: 8vh;
+    width: 56vw;
+    left: 0vw;
   }
 }
