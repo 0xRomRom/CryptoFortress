@@ -31,6 +31,7 @@ html {
   left: 50vw;
   visibility: hidden;
   display: none;
+  transition: all 2s ease-in-out;
 }
 
 .opacity {
@@ -330,6 +331,39 @@ button:hover {
 .start-button:hover {
   background: rgba(8, 248, 8, 1);
   color: rgba(0, 0, 0, 1);
+}
+
+.launch-button {
+  position: absolute;
+  top: 83vh;
+  left: 18vw;
+  padding: 1.25rem 1.75rem;
+  font-size: 2.5vw;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 600;
+  border: 7px solid black;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skewX(-35deg);
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(8, 248, 8, 0.2);
+}
+
+.launch-button:hover {
+  background: rgba(8, 248, 8, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
+.loading-data {
+  /* border: 1px solid white; */
+  position: absolute;
+  width: 48vw;
+  height: 37vh;
+  top: -7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* |Front page|  End */
