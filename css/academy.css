@@ -792,6 +792,17 @@ button:hover {
     padding: 1.25rem 1.75rem;
     font-size: 2.5vw;
   }
+  .launch-button {
+    top: 80vh;
+    left: 18vw;
+    padding: 1.25rem 1.75rem;
+    font-size: 2.5vw;
+  }
+  .loading-data {
+    width: 48vw;
+    height: 37vh;
+    top: -9vh;
+  }
 }
 @media (max-width: 1850px) {
   .start-button {
@@ -804,6 +815,17 @@ button:hover {
     top: -27vh;
     left: 1vw;
   }
+  .launch-button {
+    top: 78vh;
+    left: 18vw;
+    padding: 1.25rem 1.75rem;
+    font-size: 2.5vw;
+  }
+  .loading-data {
+    width: 48vw;
+    height: 37vh;
+    top: 6vh;
+  }
 }
 @media (max-width: 1800px) {
   .start-button {
@@ -812,9 +834,26 @@ button:hover {
     padding: 1rem 1.5rem;
     font-size: 2.5vw;
   }
+  .launch-button {
+    top: 76vh;
+    left: 18vw;
+    padding: 1rem 1.5rem;
+    font-size: 2.5vw;
+  }
+  .loading-data {
+    width: 48vw;
+    height: 35vh;
+    top: 5vh;
+  }
 }
 @media (max-width: 1750px) {
   .start-button {
+    top: 74vh;
+    left: 18vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+  .launch-button {
     top: 74vh;
     left: 18vw;
     padding: 0.5rem 1rem;
@@ -829,10 +868,27 @@ button:hover {
     padding: 0.5rem 1rem;
     font-size: 2.25vw;
   }
+  .launch-button {
+    top: 72vh;
+    left: 18vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+  .loading-data {
+    width: 48vw;
+    height: 33vh;
+    top: 6.5vh;
+  }
 }
 
 @media (max-width: 1650px) {
   .start-button {
+    top: 70vh;
+    left: 18vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+  .launch-button {
     top: 70vh;
     left: 18vw;
     padding: 0.5rem 1rem;
@@ -851,6 +907,17 @@ button:hover {
     top: -30vh;
     left: 1vw;
   }
+  .launch-button {
+    top: 68vh;
+    left: 18vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+  .loading-data {
+    width: 48vw;
+    height: 31vh;
+    top: 8vh;
+  }
 }
 
 @media (max-width: 1550px) {
@@ -860,6 +927,17 @@ button:hover {
     padding: 0.5rem 1rem;
     font-size: 2.25vw;
   }
+  .launch-button {
+    top: 66vh;
+    left: 18vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+  .loading-data {
+    width: 48vw;
+    height: 31vh;
+    top: 6.5vh;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -868,6 +946,17 @@ button:hover {
     left: 14vw;
     padding: 0.5rem 1rem;
     font-size: 2.25vw;
+  }
+  .launch-button {
+    top: 71vh;
+    left: 14vw;
+    padding: 0.5rem 1rem;
+    font-size: 2.25vw;
+  }
+  .loading-data {
+    width: 53vw;
+    height: 31vh;
+    top: 8.5vh;
   }
 }
 
@@ -885,6 +974,12 @@ button:hover {
     padding: 0.5rem 1rem;
     font-size: 2vw;
   }
+  .launch-button {
+    top: 69vh;
+    left: 13vw;
+    padding: 0.5rem 1rem;
+    font-size: 2vw;
+  }
 }
 @media (max-width: 1400px) {
   .start-button {
@@ -893,9 +988,27 @@ button:hover {
     padding: 0.5rem 1rem;
     font-size: 2vw;
   }
+  .launch-button {
+    top: 67vh;
+    left: 13vw;
+    padding: 0.5rem 1rem;
+    font-size: 2vw;
+  }
+  .loading-data {
+    width: 51vw;
+    height: 28vh;
+    top: 6.5vh;
+    left: -3vw;
+  }
 }
 @media (max-width: 1350px) {
   .start-button {
+    top: 64vh;
+    left: 13vw;
+    padding: 0.5rem 1rem;
+    font-size: 2vw;
+  }
+  .launch-button {
     top: 64vh;
     left: 13vw;
     padding: 0.5rem 1rem;
@@ -909,9 +1022,27 @@ button:hover {
     padding: 0.5rem 1rem;
     font-size: 2vw;
   }
+  .launch-button {
+    top: 61.5vh;
+    left: 13vw;
+    padding: 0.5rem 1rem;
+    font-size: 2vw;
+  }
+  .loading-data {
+    width: 52vw;
+    height: 28vh;
+    top: 9.5vh;
+    left: -3vw;
+  }
 }
 @media (max-width: 1250px) {
   .start-button {
+    top: 59vh;
+    left: 13vw;
+    padding: 0.5rem 1rem;
+    font-size: 2vw;
+  }
+  .launch-button {
     top: 59vh;
     left: 13vw;
     padding: 0.5rem 1rem;
@@ -929,6 +1060,17 @@ button:hover {
     width: 56vw;
     left: 0vw;
   }
+  .launch-button {
+    top: 61.5vh;
+    left: 13vw;
+    font-size: 2.25vw;
+  }
+  .loading-data {
+    width: 52vw;
+    height: 28vh;
+    top: 8vh;
+    left: 2vw;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -936,6 +1078,12 @@ button:hover {
     top: -32vh;
     width: 56vw;
     left: 0vw;
+  }
+  .loading-data {
+    width: 52vw;
+    height: 28vh;
+    top: 9vh;
+    left: 2vw;
   }
 }
 
@@ -945,6 +1093,12 @@ button:hover {
     width: 56vw;
     left: 0vw;
   }
+  .loading-data {
+    width: 52vw;
+    height: 28vh;
+    top: 10.5vh;
+    left: 2vw;
+  }
 }
 
 @media (max-width: 700px) {
@@ -953,11 +1107,23 @@ button:hover {
     width: 56vw;
     left: 0vw;
   }
+  .loading-data {
+    width: 52vw;
+    height: 28vh;
+    top: 7vh;
+    left: 2vw;
+  }
 }
 @media (max-width: 500px) {
   .academy-inner {
     top: -2vh;
     width: 56vw;
     left: 0vw;
+  }
+  .loading-data {
+    width: 52vw;
+    height: 28vh;
+    top: 9vh;
+    left: 2vw;
   }
 }
