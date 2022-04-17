@@ -767,7 +767,7 @@ button:hover {
     font-size: 2.5vw;
   }
   .academy-inner {
-    top: -17vh;
+    top: -27vh;
     left: 1vw;
   }
 }
@@ -814,7 +814,7 @@ button:hover {
     font-size: 2.25vw;
   }
   .academy-inner {
-    top: -21vh;
+    top: -30vh;
     left: 1vw;
   }
 }
@@ -837,9 +837,9 @@ button:hover {
   }
 }
 
-@media (max-width: 1465px) {
+@media (max-width: 1458px) {
   .academy-inner {
-    top: -13vh;
+    top: -20vh;
     left: 1vw;
   }
 }
@@ -891,7 +891,7 @@ button:hover {
     font-size: 2.25vw;
   }
   .academy-inner {
-    top: -32vh;
+    top: -40vh;
     width: 56vw;
     left: 0vw;
   }
@@ -899,7 +899,7 @@ button:hover {
 
 @media (max-width: 1100px) {
   .academy-inner {
-    top: -22vh;
+    top: -32vh;
     width: 56vw;
     left: 0vw;
   }
@@ -907,7 +907,7 @@ button:hover {
 
 @media (max-width: 950px) {
   .academy-inner {
-    top: -15vh;
+    top: -26vh;
     width: 56vw;
     left: 0vw;
   }
@@ -915,14 +915,14 @@ button:hover {
 
 @media (max-width: 700px) {
   .academy-inner {
-    top: -2vh;
+    top: -10vh;
     width: 56vw;
     left: 0vw;
   }
 }
 @media (max-width: 500px) {
   .academy-inner {
-    top: 8vh;
+    top: -2vh;
     width: 56vw;
     left: 0vw;
   }
