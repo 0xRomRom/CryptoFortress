@@ -229,7 +229,7 @@ button:hover {
 .academy-title {
   position: relative;
   height: 40rem;
-  background: rgb(245, 0, 0);
+  background: rgb(0, 0, 0);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -241,8 +241,8 @@ button:hover {
 
 .academy-header-text {
   font-family: "Turret Road", cursive;
-  color: white;
-  text-shadow: 3px 3px 3px black;
+  color: rgb(255, 0, 0);
+  text-shadow: 2px 2px 2px rgb(143, 132, 132);
   width: 100%;
   font-size: 7.6vw;
   font-weight: 500;
@@ -251,8 +251,8 @@ button:hover {
 
 .academy-header-subtext {
   font-family: "Turret Road", cursive;
-  color: white;
-  text-shadow: 3px 3px 3px black;
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px 1px rgb(143, 132, 132);
   width: 100%;
   font-size: 2.7vw;
   font-weight: 500;
@@ -388,6 +388,9 @@ button:hover {
   align-items: flex-start;
   flex-direction: column;
   row-gap: 5rem;
+}
+.menu-title {
+  font-size: 2.25vw;
 }
 
 .option-styling {
