@@ -371,12 +371,41 @@ button:hover {
 
 .loading-data {
   /* border: 1px solid white; */
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.buttons-menu {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+.option-styling {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem;
+  color: white;
+  background: red;
+  width: 100%;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 500;
+  font-size: 1.25vw;
+}
+
+.placement {
+  width: 90%;
+  margin-left: 5rem;
 }
 
 /* |Front page|  End */

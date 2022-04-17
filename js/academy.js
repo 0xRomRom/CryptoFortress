@@ -6,6 +6,7 @@ const navMenu = document.querySelector(".nav-links");
 const joinUsBtn = document.querySelector(".cta1");
 const startButton = document.querySelector(".start-button");
 const launchButton = document.querySelector(".launch-button");
+const buttonsMenu = document.querySelector(".buttons-menu");
 const displayValue = document.querySelector(".text-call1");
 const displayDataLoading = document.querySelector(".loading-data");
 
@@ -41,5 +42,6 @@ launchButton.addEventListener("click", () => {
   setTimeout(function () {
     displayValue.textContent = "";
     launchButton.disabled = true;
+    buttonsMenu.classList.remove("hide-link");
   }, 4000);
 });
