@@ -1121,11 +1121,26 @@ button:hover {
     left: 0vw;
   }
   .loading-data {
-    position: fixed;
+    position: relative;
     width: 45vw;
-    height: 24vh;
-    top: 49vh;
-    left: 24vw;
+    height: 28vh;
+    top: 3rem;
+    left: -4vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .academy-inner {
+    top: -2vh;
+    width: 56vw;
+    left: 0vw;
+  }
+  .loading-data {
+    position: relative;
+    width: 45vw;
+    height: 26vh;
+    top: 3rem;
+    left: -4vw;
   }
 }
 
@@ -1136,10 +1151,10 @@ button:hover {
     left: 0vw;
   }
   .loading-data {
-    position: fixed;
+    position: relative;
     width: 45vw;
     height: 24vh;
-    top: 56vh;
-    left: 24vw;
+    top: -9vh;
+    left: 1vw;
   }
 }
