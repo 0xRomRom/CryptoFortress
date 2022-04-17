@@ -23,4 +23,11 @@ startButton.addEventListener("click", () => {
   displayValue.textContent = "";
   launchButton.value = "Parsing";
   displayDataLoading.classList.remove("hide-link");
+
+  setTimeout(function () {
+    launchButton.value = "launch";
+    launchButton.style.color = "white";
+    launchButton.style.backgroundColor = "red";
+    displayDataLoading.classList.add("hide-link");
+  }, 4000);
 });
