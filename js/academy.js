@@ -25,12 +25,18 @@ startButton.addEventListener("click", () => {
   displayValue.textContent = "";
   displayDataLoading.classList.remove("hide-link");
   launchButton.value = "Parsing";
+  launchButton.disabled = true;
   setTimeout(function () {
     launchButton.value = "launch";
     launchButton.style.color = "white";
     launchButton.style.backgroundColor = "red";
     displayDataLoading.classList.add("hide-link");
     displayValue.style.paddingLeft = "50px";
+    launchButton.disabled = false;
     displayValue.textContent = "Ready to learn?";
   }, 4000);
+});
+
+launchButton.addEventListener("click", () => {
+  displayValue.textContent = "LFG then!";
 });
