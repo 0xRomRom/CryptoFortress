@@ -292,7 +292,7 @@ button:hover {
 }
 
 .text-call1 {
-  font-size: 3vw;
+  font-size: 2.75vw;
   font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
   color: white;
@@ -401,11 +401,16 @@ button:hover {
   font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
   font-size: 1.25vw;
+  cursor: pointer;
+}
+
+.option-styling:hover {
+  background: #e91111;
+  color: #f8dadae8;
 }
 
 .placement {
   width: 90%;
-  margin-left: 5rem;
 }
 
 /* |Front page|  End */
@@ -1094,6 +1099,9 @@ button:hover {
     width: 45%;
     height: 27%;
   }
+  .option-styling {
+    font-size: 1.7vw;
+  }
 }
 @media (max-width: 500px) {
   .academy-inner {
@@ -1101,6 +1109,9 @@ button:hover {
     left: 28vw;
     width: 45%;
     height: 32%;
+  }
+  .option-styling {
+    font-size: 1.9vw;
   }
 }
 
@@ -1112,6 +1123,6 @@ button:hover {
     top: 28vh;
     left: 28vw;
     width: 45%;
-    height: 20%;
+    height: 25%;
   }
 }
