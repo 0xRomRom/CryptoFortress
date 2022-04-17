@@ -1054,7 +1054,7 @@ button:hover {
     top: 28vh;
     left: 28vw;
     width: 45%;
-    height: 35%;
+    height: 32%;
   }
 }
 
@@ -1062,4 +1062,10 @@ button:hover {
 }
 
 @media (max-width: 400px) {
+  .academy-inner {
+    top: 28vh;
+    left: 28vw;
+    width: 45%;
+    height: 20%;
+  }
 }
