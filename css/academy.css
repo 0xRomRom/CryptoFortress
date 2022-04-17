@@ -1121,9 +1121,25 @@ button:hover {
     left: 0vw;
   }
   .loading-data {
-    width: 52vw;
-    height: 28vh;
-    top: 9vh;
-    left: 2vw;
+    position: fixed;
+    width: 45vw;
+    height: 24vh;
+    top: 49vh;
+    left: 24vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .academy-inner {
+    top: -2vh;
+    width: 56vw;
+    left: 0vw;
+  }
+  .loading-data {
+    position: fixed;
+    width: 45vw;
+    height: 24vh;
+    top: 56vh;
+    left: 24vw;
   }
 }
