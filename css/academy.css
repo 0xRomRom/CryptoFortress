@@ -323,7 +323,7 @@ button:hover {
   cursor: pointer;
   transform: skewX(-35deg);
   color: rgba(0, 0, 0, 0.8);
-  background: rgba(8, 248, 8, 0.2);
+  background: #059405;
 }
 
 .start-button:hover {
@@ -344,7 +344,7 @@ button:hover {
   cursor: pointer;
   transform: skewX(-35deg);
   color: rgba(0, 0, 0, 0.8);
-  background: rgba(8, 248, 8, 0.2);
+  background: #059405;
 }
 
 .launch-button:hover {
