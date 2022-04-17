@@ -268,7 +268,6 @@ button:hover {
   font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
   overflow: hidden;
-  margin-top: 10rem;
 }
 
 .academy-content {
@@ -329,9 +328,9 @@ button:hover {
 
 .start-button {
   position: absolute;
-  top: 83vh;
+  top: 85rem;
   left: 18vw;
-  padding: 1.25rem 1.75rem;
+  padding: 1rem 1.25rem;
   font-size: 2.5vw;
   font-family: "Press Start 2P", sans-serif;
   font-weight: 600;
@@ -350,7 +349,7 @@ button:hover {
 
 .launch-button {
   position: absolute;
-  top: 83vh;
+  top: 85rem;
   left: 18vw;
   padding: 1.25rem 1.75rem;
   font-size: 2.5vw;
@@ -845,44 +844,26 @@ button:hover {
 
 @media (max-width: 1900px) {
   .start-button {
-    top: 80vh;
-    left: 18vw;
-    padding: 1.25rem 1.75rem;
-    font-size: 2.5vw;
+    top: 82rem;
   }
   .launch-button {
-    top: 80vh;
-    left: 18vw;
-    padding: 1.25rem 1.75rem;
-    font-size: 2.5vw;
+    top: 82rem;
   }
 }
 @media (max-width: 1850px) {
   .start-button {
-    top: 78vh;
-    left: 18vw;
-    padding: 1.25rem 1.75rem;
-    font-size: 2.5vw;
+    top: 81rem;
   }
   .launch-button {
-    top: 78vh;
-    left: 18vw;
-    padding: 1.25rem 1.75rem;
-    font-size: 2.5vw;
+    top: 81rem;
   }
 }
 @media (max-width: 1800px) {
   .start-button {
-    top: 76vh;
-    left: 18vw;
-    padding: 1rem 1.5rem;
-    font-size: 2.5vw;
+    top: 79rem;
   }
   .launch-button {
-    top: 76vh;
-    left: 18vw;
-    padding: 1rem 1.5rem;
-    font-size: 2.5vw;
+    top: 79rem;
   }
   .academy-inner {
     top: 34vh;
@@ -893,31 +874,21 @@ button:hover {
 }
 @media (max-width: 1750px) {
   .start-button {
-    top: 74vh;
-    left: 18vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 76rem;
+    padding: 0.5rem;
   }
   .launch-button {
-    top: 74vh;
-    left: 18vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 76rem;
+    padding: 0.5rem;
   }
 }
 
 @media (max-width: 1700px) {
   .start-button {
-    top: 72vh;
-    left: 18vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 74.5rem;
   }
   .launch-button {
-    top: 72vh;
-    left: 18vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 74.5rem;
   }
   .academy-inner {
     top: 32rem;
@@ -926,16 +897,10 @@ button:hover {
 
 @media (max-width: 1650px) {
   .start-button {
-    top: 70vh;
-    left: 18vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 72rem;
   }
   .launch-button {
-    top: 70vh;
-    left: 18vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 72rem;
   }
   .academy-inner {
     top: 31vh;
@@ -947,31 +912,19 @@ button:hover {
 
 @media (max-width: 1600px) {
   .start-button {
-    top: 68vh;
-    left: 18vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 70rem;
   }
   .launch-button {
-    top: 68vh;
-    left: 18vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 70rem;
   }
 }
 
 @media (max-width: 1550px) {
   .start-button {
-    top: 66vh;
-    left: 18vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 67.5rem;
   }
   .launch-button {
-    top: 66vh;
-    left: 18vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 67.5rem;
   }
   .academy-inner {
     top: 30rem;
@@ -980,16 +933,12 @@ button:hover {
 
 @media (max-width: 1500px) {
   .start-button {
-    top: 71vh;
-    left: 14vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 72rem;
+    left: 15vw;
   }
   .launch-button {
-    top: 71vh;
-    left: 14vw;
-    padding: 0.5rem 1rem;
-    font-size: 2.25vw;
+    top: 72rem;
+    left: 25rem;
   }
   .academy-inner {
     top: 31vh;
@@ -1122,7 +1071,21 @@ button:hover {
     height: 32%;
   }
   .option-styling {
-    font-size: 1.9vw;
+    font-size: 1.8vw;
+  }
+  .farming-staking-mining {
+    font-size: 1.7vw;
+  }
+  .academy-title {
+    height: 20rem;
+  }
+  .academy-header-text {
+    padding-left: 1rem;
+    text-shadow: 1px 1px 1px rgb(255, 0, 0);
+  }
+
+  .academy-header-subtext {
+    text-shadow: 1px 1px 1px rgb(255, 0, 0);
   }
 }
 
