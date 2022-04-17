@@ -18,7 +18,6 @@ hamburger.addEventListener("click", () => {
 
 //Arcade machine functionality
 startButton.classList.remove("hide-link");
-
 startButton.addEventListener("click", () => {
   startButton.classList.add("hide-link");
   launchButton.classList.remove("hide-link");
@@ -31,7 +30,6 @@ startButton.addEventListener("click", () => {
     launchButton.style.color = "white";
     launchButton.style.backgroundColor = "red";
     displayDataLoading.classList.add("hide-link");
-    displayValue.style.paddingLeft = "50px";
     launchButton.disabled = false;
     displayValue.textContent = "Ready to learn?";
   }, 4000);
@@ -39,4 +37,8 @@ startButton.addEventListener("click", () => {
 
 launchButton.addEventListener("click", () => {
   displayValue.textContent = "LFG then!";
+  displayValue.classList.add("text-fade");
+  setTimeout(function () {
+    displayValue.textContent = "";
+  }, 4000);
 });

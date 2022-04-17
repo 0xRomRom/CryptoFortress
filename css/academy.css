@@ -298,6 +298,23 @@ button:hover {
   color: white;
 }
 
+.text-fade {
+  animation: fadeInOut 4s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(3);
+  }
+  100% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
 .arcade-machine1 {
   position: relative;
   width: 100vw;
