@@ -40,5 +40,6 @@ launchButton.addEventListener("click", () => {
   displayValue.classList.add("text-fade");
   setTimeout(function () {
     displayValue.textContent = "";
+    launchButton.disabled = true;
   }, 4000);
 });
