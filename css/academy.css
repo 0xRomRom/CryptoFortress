@@ -241,8 +241,8 @@ button:hover {
 
 .academy-header-text {
   font-family: "Turret Road", cursive;
-  color: rgb(255, 0, 0);
-  text-shadow: 2px 2px 2px rgb(143, 132, 132);
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px rgb(255, 0, 0);
   width: 100%;
   font-size: 7.6vw;
   font-weight: 500;
@@ -251,8 +251,8 @@ button:hover {
 
 .academy-header-subtext {
   font-family: "Turret Road", cursive;
-  color: rgb(255, 0, 0);
-  text-shadow: 1px 1px 1px rgb(143, 132, 132);
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(255, 0, 0);
   width: 100%;
   font-size: 2.7vw;
   font-weight: 500;
@@ -399,7 +399,7 @@ button:hover {
   justify-content: center;
   padding: 2rem 2rem;
   color: white;
-  background: red;
+  background: #ca0404;
   width: 100%;
   font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
@@ -408,14 +408,22 @@ button:hover {
 }
 
 .option-styling:hover {
-  background: #e91111;
-  color: #f8dadae8;
+  background: red;
+  text-decoration: underline;
 }
 
 .placement {
   width: 90%;
 }
 
+.contribute-tutorial {
+  color: rgba(255, 255, 255, 0.8);
+  background: gray;
+}
+.contribute-tutorial:hover {
+  color: rgba(255, 255, 255, 1);
+  background: rgb(112, 111, 111);
+}
 /* |Front page|  End */
 /*                   */
 /* |Footer Start|    */
