@@ -780,11 +780,18 @@ button:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 2rem 0rem;
+  padding-top: 1rem;
 }
 
 .button1-padding:hover {
   animation: hoverUp 1s ease-in-out forwards infinite;
+}
+
+.menu-href {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cta-exchange {
@@ -808,6 +815,7 @@ button:hover {
   opacity: 0;
   width: 100%;
   padding-left: 2vw;
+  padding-top: 1rem;
 }
 
 .option2 {

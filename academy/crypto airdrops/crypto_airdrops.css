@@ -233,7 +233,6 @@ button:hover {
   font-size: 2.5vw;
   font-family: "Turret Road", cursive;
   font-weight: 500;
-  border-bottom: 2px solid white;
   overflow: hidden;
 }
 
@@ -334,7 +333,7 @@ button:hover {
 
 .footer-content {
   height: 100rem;
-  background-image: url("../img/chart.png");
+  background-image: url("../../img/chart.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
