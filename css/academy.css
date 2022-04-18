@@ -803,6 +803,7 @@ button:hover {
 @media (max-width: 500px) {
   .hamburger {
     position: relative;
+    top: -1vh;
     right: -50vw;
   }
   .content {
@@ -1086,6 +1087,12 @@ button:hover {
 
   .academy-header-subtext {
     text-shadow: 1px 1px 1px rgb(255, 0, 0);
+  }
+  .start-button {
+    border: 4px solid black;
+  }
+  .launch-button {
+    border: 4px solid black;
   }
 }
 

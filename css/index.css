@@ -1482,6 +1482,7 @@ footer {
   }
   .hamburger {
     position: relative;
+    top: -1vh;
     right: -50vw;
   }
   .modal-textsize {

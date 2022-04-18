@@ -1,6 +1,7 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap");
 
 /* Setting defaults */
 
@@ -225,16 +226,106 @@ button:hover {
 /* |Front page|  Start */
 
 .content {
-  height: 80rem;
+  min-height: 150rem;
   position: relative;
-  background-color: red;
+  background-color: black;
   color: white;
   font-size: 2.5vw;
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Turret Road", cursive;
   font-weight: 500;
+  border-bottom: 2px solid white;
+  overflow: hidden;
+}
+
+.page-title {
+  position: relative;
+  top: 15rem;
+  left: 30vw;
+  text-shadow: 3px 3px 3px rgb(255, 0, 0);
+}
+
+.content-container {
+  position: absolute;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  top: 40rem;
+  height: auto;
+  width: 90vw;
+  left: 2.5vw;
+  gap: 5rem;
+}
+
+.description-box {
+  height: 15rem;
+  width: 90vw;
+  left: 5vw;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
+  box-shadow: 0px 0px 10px white;
+  border-radius: 20px;
+}
+
+.title1 {
+  position: relative;
+  left: -5vw;
+  font-size: 4vw;
+}
+.title2 {
+  position: relative;
+  left: 2vw;
+  font-size: 4vw;
+}
+.title3 {
+  position: relative;
+  left: 4vw;
+  font-size: 4vw;
+}
+
+.features {
+  min-height: 10rem;
+  left: 5vw;
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0px 0px 15px rgb(92, 14, 238);
+  border-radius: 20px;
+}
+
+.features:hover {
+  background: rgba(92, 14, 238, 0.4);
+}
+
+.cta-tutorial {
+  font-size: 2.5vw;
+  font-family: "Turret Road", cursive;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+
+.author {
+  max-width: 20vw;
+}
+
+.tutorial {
+  position: relative;
+  padding: 1.5rem;
+  cursor: pointer;
+  max-width: 20vw;
+}
+
+.tutorial:hover {
+  text-shadow: 0px 0px 20px white;
+}
+
+.description {
+  font-size: 1.7vw;
+  max-width: 20vw;
 }
 
 /* |Front page|  End */
@@ -524,11 +615,18 @@ button:hover {
     left: 20%;
     font-size: 3.5vw;
   }
+  .description {
+    font-size: 2vw;
+    max-width: ;
+  }
 }
 
 @media (max-width: 700px) {
   .icon-box {
     padding-left: 3rem;
+  }
+  .author {
+    font-size: 3vw;
   }
 }
 
@@ -540,6 +638,10 @@ button:hover {
   .icon-box {
     padding-left: 1rem;
   }
+  .content-container {
+    top: 30rem;
+    left: 5vw;
+  }
 }
 
 @media (max-width: 500px) {
@@ -548,12 +650,24 @@ button:hover {
     top: -1vh;
     right: -50vw;
   }
+  .tutorial {
+    font-size: 3vw;
+  }
+  .description {
+    font-size: 2.8vw;
+  }
 }
 
 @media (max-width: 413px) {
   .hamburger {
     position: relative;
     right: -55vw;
+  }
+  .description {
+    font-size: 2.9vw;
+  }
+  .tutorial {
+    font-size: 2.9vw;
   }
 }
 
