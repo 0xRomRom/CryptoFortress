@@ -73,6 +73,8 @@ button {
 
 .cflogo {
   margin-left: 1.5rem;
+  box-shadow: 0px 0px 30px rgb(92, 14, 238);
+  border-radius: 5rem;
 }
 
 .nav-links {
@@ -246,6 +248,11 @@ button:hover {
   z-index: 3;
   color: white;
   animation: dropDown 0.5s 1 ease-in;
+  text-shadow: 0px 0px 15px rgb(92, 14, 238);
+}
+
+.hide-shadow {
+  text-shadow: none;
 }
 
 @keyframes dropDown {
@@ -266,6 +273,7 @@ button:hover {
   z-index: 3;
   color: white;
   animation: pushUp 1s 1 ease-in;
+  text-shadow: 0px 0px 20px rgb(92, 14, 238);
 }
 
 @keyframes pushUp {
@@ -282,7 +290,7 @@ button:hover {
 .explore-anchor {
   position: relative;
   top: -15rem;
-  left: 50vw;
+  left: 45%;
 }
 
 .btn1 {
@@ -310,10 +318,11 @@ button:hover {
   border-radius: 50px;
   border: transparent;
   animation: glowing 20s linear infinite, fadeIn 1s 0s 1;
+  box-shadow: 0px 0px 20px rgb(92, 14, 238);
 }
 
 .btn1:hover {
-  box-shadow: 5px 5px 15px rgba(145, 92, 182, 0.4);
+  box-shadow: 0px 0px 30px rgb(92, 14, 238);
 }
 /* |Front page| Header End */
 
@@ -355,6 +364,7 @@ button:hover {
   color: white;
   animation: dropDown 0.5s 1 ease-in, glowing1 1s ease-in-out infinite alternate;
   display: block;
+  text-shadow: 0px 0px 20px rgb(92, 14, 238);
 }
 
 @keyframes glowing1 {
@@ -378,6 +388,7 @@ button:hover {
 .early {
   display: block;
   line-height: 5em;
+  margin-top: -8rem;
 }
 /* Hover modal section */
 
@@ -457,6 +468,9 @@ button:hover {
   display: block;
   font-family: "Press Start 2P", sans-serif;
   font-size: 1.8vw;
+  box-shadow: 0px 0px 25px rgb(235, 26, 207);
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 .modal-span1 {
@@ -490,6 +504,9 @@ button:hover {
   color: rgb(20, 201, 20);
   font-family: "Press Start 2P", sans-serif;
   font-size: 1.8vw;
+  box-shadow: 0px 0px 25px rgb(20, 201, 20);
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 .modal-span3 {
@@ -519,6 +536,9 @@ button:hover {
   color: rgb(59, 92, 201);
   font-family: "Press Start 2P", sans-serif;
   font-size: 1.8vw;
+  box-shadow: 0px 0px 25px rgb(59, 92, 201);
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 .modal-span4 {
@@ -554,6 +574,9 @@ button:hover {
   color: rgb(194, 197, 31);
   font-family: "Press Start 2P", sans-serif;
   font-size: 1.8vw;
+  box-shadow: 0px 0px 25px rgb(194, 197, 31);
+  border-radius: 2rem;
+  padding: 1rem;
 }
 .modal-span6 {
   color: rgb(226, 10, 208);
@@ -582,6 +605,9 @@ button:hover {
   color: rgb(253, 0, 0);
   font-family: "Press Start 2P", sans-serif;
   font-size: 1.8vw;
+  box-shadow: 0px 0px 25px rgb(253, 0, 0);
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 .modal-span7 {
@@ -604,7 +630,6 @@ button:hover {
 .section2 {
   position: relative;
   min-height: 100rem;
-  /* border-top: 5px solid white; */
   overflow: hidden;
   transform: scale(0.1);
   transition: all 1s ease-in-out;
@@ -747,7 +772,7 @@ button:hover {
   background-image: linear-gradient(45deg, #00ffa3, #03e1ff, #dc1fff, #306a9c);
   background-size: 600%;
   z-index: 1000;
-  border: 3px solid red;
+  box-shadow: 0px 0px 25px rgb(92, 14, 238);
   animation: glowingOption 15s linear infinite;
   position: relative;
   left: 65vw;
@@ -806,6 +831,7 @@ button:hover {
   border: transparent;
   width: 80%;
   height: 100%;
+  box-shadow: 0px 0px 20px rgb(92, 14, 238);
 }
 
 .exchange-sidenote {
@@ -849,6 +875,7 @@ button:hover {
   background-size: 400%;
   border: transparent;
   width: 80%;
+  box-shadow: 0px 0px 20px rgb(92, 14, 238);
 }
 
 .academy-sidenote {
@@ -889,6 +916,7 @@ button:hover {
   background-size: 400%;
   border: transparent;
   width: 80%;
+  box-shadow: 0px 0px 20px rgb(92, 14, 238);
 }
 
 .legion-sidenote {
@@ -1225,7 +1253,6 @@ footer {
   }
   .cflogo {
     width: 7rem;
-    padding-bottom: 1rem;
   }
   .cta1,
   button {
@@ -1276,14 +1303,13 @@ footer {
   }
   .section1-header-text {
     top: 15%;
-    /* animation: none; */
   }
   .hover-list {
     justify-content: center;
     gap: 1.5rem;
   }
   .explore-anchor {
-    left: 40vw;
+    left: 35%;
     top: -30vh;
   }
   .modal-textsize {

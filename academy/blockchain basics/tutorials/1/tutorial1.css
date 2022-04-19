@@ -74,6 +74,8 @@ button {
 
 .cflogo {
   margin-left: 1.5rem;
+  box-shadow: 0px 0px 50px rgb(92, 14, 238);
+  border-radius: 5rem;
 }
 
 .nav-links {
@@ -631,7 +633,6 @@ button:hover {
   }
   .cflogo {
     width: 7rem;
-    padding-bottom: 1rem;
   }
   .cta1,
   button {
