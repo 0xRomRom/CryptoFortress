@@ -33,7 +33,7 @@ startButton.addEventListener("click", () => {
     displayDataLoading.classList.add("hide-link");
     launchButton.disabled = false;
     displayValue.textContent = "Ready to learn?";
-  }, 4000);
+  }, 3000);
 });
 
 launchButton.addEventListener("click", () => {
@@ -43,5 +43,5 @@ launchButton.addEventListener("click", () => {
     displayValue.textContent = "";
     launchButton.disabled = true;
     buttonsMenu.classList.remove("hide-link");
-  }, 4000);
+  }, 3000);
 });
