@@ -770,7 +770,6 @@ button:hover {
 @media (max-width: 500px) {
   .hamburger {
     position: relative;
-    top: -1vh;
     right: -50vw;
   }
   .tutorial {

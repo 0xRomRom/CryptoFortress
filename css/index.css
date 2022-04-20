@@ -253,6 +253,7 @@ button:hover {
 
 .hide-shadow {
   text-shadow: none;
+  transition: all 0.5s ease-in-out;
 }
 
 @keyframes dropDown {
@@ -795,7 +796,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
@@ -805,7 +805,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 1rem;
+  padding: 2rem 0rem;
 }
 
 .button1-padding:hover {
@@ -1516,7 +1516,6 @@ footer {
   }
   .hamburger {
     position: relative;
-    top: -1vh;
     right: -50vw;
   }
   .modal-textsize {
