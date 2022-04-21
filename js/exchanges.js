@@ -32,28 +32,29 @@ window.addEventListener("scroll", () => {
   let contentTop8 = content8.getBoundingClientRect().bottom;
   let screenPosition = window.innerHeight;
   console.log(contentTop1);
-  if (contentTop1 < screenPosition) {
-    content1.classList.add("active");
+
+  if (contentTop1 - 100 < screenPosition) {
+    content1.classList.add("activate");
   }
   if (contentTop2 < screenPosition) {
-    content2.classList.add("active");
+    content2.classList.add("activate");
   }
   if (contentTop3 < screenPosition) {
-    content3.classList.add("active");
+    content3.classList.add("activate");
   }
   if (contentTop4 < screenPosition) {
-    content4.classList.add("active");
+    content4.classList.add("activate");
   }
   if (contentTop5 < screenPosition) {
-    content5.classList.add("active");
+    content5.classList.add("activate");
   }
   if (contentTop6 < screenPosition) {
-    content6.classList.add("active");
+    content6.classList.add("activate");
   }
   if (contentTop7 < screenPosition) {
-    content7.classList.add("active");
+    content7.classList.add("activate");
   }
   if (contentTop8 < screenPosition) {
-    content8.classList.add("active");
+    content8.classList.add("activate");
   }
 });

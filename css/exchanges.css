@@ -596,6 +596,11 @@ button:hover {
 
 .active {
   opacity: 1;
+  transform: scale(1);
+}
+
+.activate {
+  opacity: 1;
   transform: translateY(6rem);
   transition: 0.4s ease-in;
 }
