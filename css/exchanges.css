@@ -540,11 +540,11 @@ button:hover {
 
 .metamask-subheader {
   position: relative;
-  font-size: 2.5vw;
+  font-size: 2.1vw;
   font-family: "Montserrat";
-  left: 4vw;
+
   top: 2rem;
-  padding-top: 2rem;
+  padding: 3.9rem 2rem 2rem 2rem;
 }
 
 .active {
