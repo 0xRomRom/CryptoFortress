@@ -21,6 +21,7 @@ window.addEventListener("scroll", () => {
   const content5 = document.querySelector(".exchange5");
   const content6 = document.querySelector(".wallet-box");
   const content7 = document.querySelector(".metamask");
+  const content8 = document.querySelector(".phantom");
   let contentTop1 = content1.getBoundingClientRect().bottom;
   let contentTop2 = content2.getBoundingClientRect().bottom;
   let contentTop3 = content3.getBoundingClientRect().bottom;
@@ -28,6 +29,7 @@ window.addEventListener("scroll", () => {
   let contentTop5 = content5.getBoundingClientRect().bottom;
   let contentTop6 = content6.getBoundingClientRect().bottom;
   let contentTop7 = content7.getBoundingClientRect().bottom;
+  let contentTop8 = content8.getBoundingClientRect().bottom;
   let screenPosition = window.innerHeight;
   console.log(contentTop1);
   if (contentTop1 < screenPosition) {
@@ -50,5 +52,8 @@ window.addEventListener("scroll", () => {
   }
   if (contentTop7 < screenPosition) {
     content7.classList.add("active");
+  }
+  if (contentTop8 < screenPosition) {
+    content8.classList.add("active");
   }
 });
