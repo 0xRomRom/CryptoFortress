@@ -275,7 +275,7 @@ button:hover {
   gap: 4rem;
   width: 50%;
   min-height: 15rem;
-  top: 50vh;
+  top: 30vh;
   left: 10vw;
   border-radius: 2rem;
   box-shadow: 0px 0px 25px rgb(52, 27, 190);
@@ -319,7 +319,7 @@ button:hover {
   gap: 4rem;
   width: 50%;
   min-height: 15rem;
-  top: 80vh;
+  top: 50vh;
   left: 40vw;
   border-radius: 2rem;
   box-shadow: 0px 0px 25px rgb(52, 27, 190);
@@ -361,7 +361,7 @@ button:hover {
   gap: 4rem;
   width: 50%;
   min-height: 15rem;
-  top: 110vh;
+  top: 70vh;
   left: 10vw;
   border-radius: 2rem;
   box-shadow: 0px 0px 25px rgb(52, 27, 190);
@@ -403,7 +403,7 @@ button:hover {
   gap: 4rem;
   width: 50%;
   min-height: 15rem;
-  top: 140vh;
+  top: 90vh;
   left: 40vw;
   border-radius: 2rem;
   box-shadow: 0px 0px 25px rgb(52, 27, 190);
@@ -445,7 +445,7 @@ button:hover {
   gap: 4rem;
   width: 50%;
   min-height: 15rem;
-  top: 170vh;
+  top: 110vh;
   left: 10vw;
   border-radius: 2rem;
   box-shadow: 0px 0px 25px rgb(52, 27, 190);
@@ -486,7 +486,7 @@ button:hover {
   flex-direction: column;
   gap: 4rem;
   width: 90vw;
-  top: 200vh;
+  top: 140vh;
   left: 4.5vw;
   border-radius: 2rem;
   box-shadow: 0px 0px 25px rgb(235, 26, 207);
@@ -518,7 +518,7 @@ button:hover {
   gap: 4rem;
   width: 50%;
   background-color: rgb(36, 41, 48);
-  top: 235vh;
+  top: 160vh;
   left: 10vw;
   border-radius: 2rem;
   box-shadow: 0px 0px 25px rgb(52, 27, 190);
@@ -559,7 +559,7 @@ button:hover {
   gap: 4rem;
   width: 50%;
   background-color: rgb(36, 41, 48);
-  top: 265vh;
+  top: 180vh;
   left: 40vw;
   border-radius: 2rem;
   box-shadow: 0px 0px 25px rgb(52, 27, 190);
