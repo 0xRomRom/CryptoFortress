@@ -22,6 +22,7 @@ window.addEventListener("scroll", () => {
   const content6 = document.querySelector(".wallet-box");
   const content7 = document.querySelector(".metamask");
   const content8 = document.querySelector(".phantom");
+  const content9 = document.querySelector(".trezor");
   let contentTop1 = content1.getBoundingClientRect().bottom;
   let contentTop2 = content2.getBoundingClientRect().bottom;
   let contentTop3 = content3.getBoundingClientRect().bottom;
@@ -30,6 +31,7 @@ window.addEventListener("scroll", () => {
   let contentTop6 = content6.getBoundingClientRect().bottom;
   let contentTop7 = content7.getBoundingClientRect().bottom;
   let contentTop8 = content8.getBoundingClientRect().bottom;
+  let contentTop9 = content9.getBoundingClientRect().bottom;
   let screenPosition = window.innerHeight;
   console.log(contentTop1);
 
@@ -56,5 +58,8 @@ window.addEventListener("scroll", () => {
   }
   if (contentTop8 < screenPosition) {
     content8.classList.add("activate");
+  }
+  if (contentTop9 < screenPosition) {
+    content9.classList.add("activate");
   }
 });

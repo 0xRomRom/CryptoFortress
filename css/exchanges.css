@@ -225,7 +225,7 @@ button:hover {
 /* |Front page|  Start */
 
 .content {
-  height: 700rem;
+  height: 670rem;
   position: relative;
   background-color: rgb(0, 0, 0);
   color: white;
@@ -233,7 +233,7 @@ button:hover {
   font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
   overflow: hidden;
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
 }
 
 .header-box {
@@ -463,15 +463,15 @@ button:hover {
   box-shadow: 0px 0px 45px rgb(52, 27, 190);
 }
 
-.kucoin-header {
+.crypto-header {
   position: relative;
   font-size: 3.5vw;
   font-family: "Montserrat";
-  left: 14vw;
+  left: 11vw;
   top: 2rem;
 }
 
-.kucoin-subheader {
+.crypto-subheader {
   position: relative;
   font-size: 2.5vw;
   font-family: "Montserrat";
@@ -592,6 +592,81 @@ button:hover {
 
   top: 2rem;
   padding: 3.9rem 2rem 2rem 2rem;
+}
+
+.trezor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 50%;
+  background-color: rgb(36, 41, 48);
+  top: 207vh;
+  left: 10vw;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 25px rgb(52, 27, 190);
+  padding-bottom: 2rem;
+  background-image: url("/img/trezor-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: 0.2s ease-in-out;
+  text-shadow: 0px 0px 10px black;
+  opacity: 0;
+  background-color: rgb(31, 27, 37);
+}
+
+.trezor:hover {
+  box-shadow: 0px 0px 45px rgb(52, 27, 190);
+}
+
+.trezor-header {
+  position: relative;
+  font-size: 3.5vw;
+  font-family: "Montserrat";
+  left: 16vw;
+  top: 2rem;
+}
+
+.trezor-subheader {
+  position: relative;
+  font-size: 2.1vw;
+  font-family: "Montserrat";
+  top: 2rem;
+  padding: 3.9rem 2rem 2rem 2rem;
+}
+
+.to-top {
+  position: relative;
+  top: 235vh;
+  left: 29vw;
+  padding: 1rem;
+}
+
+.fa-circle-arrow-up {
+  color: white;
+  text-shadow: 0px 0px 20px #f039b9;
+  animation: hoverUp 1s ease-in-out forwards infinite;
+  cursor: pointer;
+}
+
+@keyframes hoverUp {
+  0% {
+    position: relative;
+    transform: translateY(0%);
+    color: white;
+  }
+
+  50% {
+    position: relative;
+    transform: translateY(7px);
+    color: white;
+  }
+
+  100% {
+    transform: translateY(0%);
+    position: relative;
+    color: white;
+  }
 }
 
 .active {
@@ -914,6 +989,122 @@ button:hover {
     position: relative;
     top: -1vh;
     right: -50vw;
+  }
+  .width-increase {
+    width: 60%;
+  }
+  .binance-header {
+    font-size: 7vw;
+    left: 10vw;
+  }
+  .binance-subheader {
+    font-size: 3.5vw;
+    left: 3vw;
+  }
+  .ftx-header {
+    font-size: 7vw;
+    left: 15vw;
+  }
+  .ftx-subheader {
+    font-size: 3.5vw;
+    left: 3vw;
+  }
+  .coinbase-header {
+    font-size: 7vw;
+    left: 8vw;
+  }
+  .coinbase-subheader {
+    font-size: 3.3vw;
+    left: 2.8vw;
+  }
+  .kraken-header {
+    font-size: 7vw;
+    left: 10vw;
+  }
+  .kraken-subheader {
+    font-size: 3.3vw;
+    left: 3vw;
+  }
+  .crypto-header {
+    font-size: 7vw;
+    left: 5vw;
+  }
+  .crypto-subheader {
+    font-size: 3.2vw;
+    left: 3vw;
+  }
+  .push-left {
+    left: 30vw;
+  }
+  .wallet-text {
+    font-size: 9vw;
+    left: 18vw;
+  }
+  .wallet-subtext {
+    font-size: 5vw;
+    left: 12vw;
+  }
+  .metamask-header {
+    font-size: 6.5vw;
+    left: 2vw;
+    top: 1vh;
+  }
+  .metamask-subheader {
+    padding-top: 2rem;
+    font-size: 3.5vw;
+  }
+  .phantom-header {
+    font-size: 6.5vw;
+    left: 4vw;
+    top: 1vh;
+  }
+  .phantom-subheader {
+    padding-top: 2rem;
+    font-size: 3.5vw;
+  }
+  .trezor-header {
+    font-size: 6.5vw;
+    left: 17vw;
+    top: 1vh;
+  }
+  .trezor-subheader {
+    padding-top: 2rem;
+    font-size: 3.5vw;
+  }
+  .exchange1 {
+    top: 25vh;
+  }
+  .exchange2 {
+    top: 40vh;
+  }
+  .exchange3 {
+    top: 55vh;
+    width: 65%;
+  }
+  .exchange4 {
+    top: 70vh;
+  }
+  .exchange5 {
+    top: 85vh;
+  }
+  .wallet-box {
+    top: 100vh;
+  }
+  .metamask {
+    top: 115vh;
+  }
+  .phantom {
+    top: 130vh;
+    left: 30vw;
+  }
+  .trezor {
+    top: 145vh;
+  }
+  .to-top {
+    top: 160vh;
+  }
+  .content {
+    height: 335rem;
   }
 }
 
