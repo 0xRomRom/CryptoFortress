@@ -1101,10 +1101,20 @@ button:hover {
     top: 145vh;
   }
   .to-top {
-    top: 160vh;
+    top: 165vh;
+    left: 27vw;
   }
   .content {
     height: 335rem;
+  }
+  .fa-lg {
+    font-size: 7vw;
+  }
+  .header-subtext {
+    font-size: 4vw;
+  }
+  .header-text {
+    top: 1vh;
   }
 }
 
