@@ -225,9 +225,8 @@ button:hover {
 /* |Front page|  Start */
 
 .content {
-  height: 80rem;
+  height: 240rem;
   position: relative;
-  /* background-color: red; */
   color: white;
   font-size: 2.5vw;
   font-family: "Press Start 2P", sans-serif;
@@ -235,8 +234,27 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90%;
 }
 
+.rss-feed {
+  display: flex;
+  position: relative;
+  top: -42rem;
+  left: 4.5vw;
+  width: 70%;
+  height: 100rem;
+}
+
+.news-title {
+  display: inline-block;
+  position: relative;
+  top: 15rem;
+  left: 14vw;
+  font-size: 7vw;
+  font-family: "Montserrat";
+  color: white;
+}
 /* |Front page|  End */
 /*                   */
 /* |Footer Start|    */
