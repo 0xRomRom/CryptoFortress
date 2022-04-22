@@ -581,6 +581,7 @@ iframe {
 
   .rss-feed {
     top: -27vh;
+    width: 90%;
   }
 }
 
