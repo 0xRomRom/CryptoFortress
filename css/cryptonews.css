@@ -225,101 +225,16 @@ button:hover {
 /* |Front page|  Start */
 
 .content {
-  overflow: hidden;
-  height: 150rem;
-  border-bottom: 1px solid white;
-}
-.headerbox {
-  box-shadow: 0px 0px 25px rgb(235, 26, 207);
-  width: 90vw;
-  height: 50rem;
+  height: 80rem;
   position: relative;
-  top: 15vh;
-  left: 5vw;
-  border-radius: 2rem;
+  /* background-color: red; */
+  color: white;
+  font-size: 2.5vw;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 15rem;
-  z-index: 5;
-}
-
-.projectreview-header {
-  color: white;
-  font-size: 7vw;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  text-shadow: 0px 0px 20px black;
-}
-
-.projectreview-header-subtext {
-  position: relative;
-  color: white;
-  font-size: 3vw;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  text-shadow: 0px 0px 20px black;
-  z-index: 5;
-}
-
-.spaceshuttle {
-  display: flex;
-  justify-content: column;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  top: -30vh;
-  left: 83vw;
-  width: 10rem;
-  height: 20rem;
-  font-size: 10vw;
-  display: flex;
-  gap: 0rem;
-  animation: spaceShuttleAnimation 4.5s 3s 1 forwards;
-}
-
-.fa-shuttle-space {
-  position: relative;
-  left: 15vw;
-  color: white;
-  transform: rotate(270deg);
-  text-shadow: 0px 0px 30px rgb(248, 14, 14);
-}
-.fa-5x {
-  font-size: 13rem !important;
-}
-
-.fire-gif {
-  position: relative;
-  left: 1vw;
-  width: 7vw;
-  transform: rotate(180deg);
-}
-
-@keyframes spaceShuttleAnimation {
-  0% {
-    transform: translateY(0rem);
-  }
-  12% {
-    transform: translateY(5rem);
-  }
-  24% {
-    transform: translateY(0rem);
-  }
-  33% {
-    transform: translateY(5rem);
-  }
-
-  45% {
-    transform: translateY(0rem);
-  }
-  50% {
-    top: -20vh;
-  }
-  100% {
-    top: -100vh;
-  }
 }
 
 /* |Front page|  End */

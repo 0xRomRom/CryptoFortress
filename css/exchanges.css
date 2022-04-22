@@ -842,6 +842,9 @@ button:hover {
   a {
     font-size: 1.5rem;
   }
+  .content {
+    height: 576vh;
+  }
 }
 
 @media (max-width: 1460px) {
@@ -870,11 +873,17 @@ button:hover {
   .icon-box {
     padding-left: 8rem;
   }
+  .content {
+    height: 540vh;
+  }
 }
 
 @media (max-width: 1220px) {
   .nav-links li {
     padding: 0rem 0.6rem;
+  }
+  .content {
+    height: 515vh;
   }
 }
 
@@ -935,6 +944,12 @@ button:hover {
     position: static;
     visibility: visible;
     display: initial;
+  }
+}
+
+@media (max-width: 1000px) {
+  .content {
+    height: 540vh;
   }
 }
 
@@ -1105,7 +1120,7 @@ button:hover {
     left: 27vw;
   }
   .content {
-    height: 335rem;
+    height: 380rem;
   }
   .fa-lg {
     font-size: 7vw;
@@ -1115,6 +1130,12 @@ button:hover {
   }
   .header-text {
     top: 1vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
+    height: 360rem;
   }
 }
 
