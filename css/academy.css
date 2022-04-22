@@ -389,6 +389,7 @@ button:hover {
   row-gap: 5rem;
 }
 .menu-title {
+  padding-left: 1rem;
   font-size: 2.25vw;
 }
 

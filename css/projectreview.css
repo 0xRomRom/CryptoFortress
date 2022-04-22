@@ -227,7 +227,6 @@ button:hover {
 .content {
   overflow: hidden;
   height: 150rem;
-  border-bottom: 1px solid white;
 }
 .headerbox {
   box-shadow: 0px 0px 25px rgb(235, 26, 207);
@@ -476,6 +475,19 @@ button:hover {
   .nav-links li {
     padding: 0rem 2.2rem;
   }
+  .fa-shuttle-space {
+    left: 1vw;
+  }
+  .fa-5x {
+    font-size: 11rem !important;
+  }
+
+  .fire-gif {
+    position: relative;
+    left: 1vw;
+    width: 7vw;
+    transform: rotate(180deg);
+  }
 }
 
 @media (max-width: 1600px) {
@@ -500,6 +512,9 @@ button:hover {
   .footer-text-box {
     gap: 2rem;
     top: 45vh;
+  }
+  .spaceshuttle {
+    gap: 2rem;
   }
 }
 
@@ -581,6 +596,22 @@ button:hover {
   }
 }
 
+@media (max-width: 1000px) {
+  .fa-shuttle-space {
+    left: 0vw;
+  }
+  .fa-5x {
+    font-size: 9rem !important;
+  }
+
+  .fire-gif {
+    position: relative;
+    left: 0vw;
+    width: 7vw;
+    transform: rotate(180deg);
+  }
+}
+
 @media (max-width: 950px) {
   .bottom-container {
     left: 5vw;
@@ -609,11 +640,49 @@ button:hover {
     left: 20%;
     font-size: 3.5vw;
   }
+  .fa-shuttle-space {
+    left: -4vw;
+  }
+  .fa-5x {
+    font-size: 9rem !important;
+  }
+  .fire-gif {
+    left: -4vw;
+  }
+  .spaceshuttle {
+    top: -25vh;
+  }
 }
 
 @media (max-width: 700px) {
   .icon-box {
     padding-left: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .fa-shuttle-space {
+    left: -5vw;
+  }
+  .fa-5x {
+    font-size: 7rem !important;
+  }
+  .fire-gif {
+    left: -5vw;
+  }
+  .spaceshuttle {
+    top: -6vh;
+  }
+  .headerbox {
+    gap: 10rem;
+    height: 30rem;
+  }
+  .projectreview-header {
+    font-size: 8vw;
+  }
+  .projectreview-header-subtext {
+    font-size: 4.5vw;
+    padding-left: 2rem;
   }
 }
 
@@ -624,6 +693,25 @@ button:hover {
   }
   .icon-box {
     padding-left: 1rem;
+  }
+  .fa-shuttle-space {
+    left: -7vw;
+  }
+  .fa-5x {
+    font-size: 5rem !important;
+  }
+  .fire-gif {
+    left: -7vw;
+  }
+  .spaceshuttle {
+    top: -6vh;
+  }
+  .headerbox {
+    gap: 10rem;
+    height: 30rem;
+  }
+  .projectreview-header {
+    font-size: 8vw;
   }
 }
 
@@ -639,6 +727,15 @@ button:hover {
   .hamburger {
     position: relative;
     right: -55vw;
+  }
+  .fa-shuttle-space {
+    left: -9vw;
+  }
+  .fa-5x {
+    font-size: 5rem !important;
+  }
+  .fire-gif {
+    left: -9vw;
   }
 }
 
