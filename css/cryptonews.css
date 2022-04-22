@@ -225,7 +225,7 @@ button:hover {
 /* |Front page|  Start */
 
 .content {
-  height: 240rem;
+  height: 200rem;
   position: relative;
   color: white;
   font-size: 2.5vw;
@@ -240,7 +240,7 @@ button:hover {
 .rss-feed {
   display: flex;
   position: relative;
-  top: -42rem;
+  top: -20vh;
   left: 4.5vw;
   width: 70%;
   height: 100rem;
@@ -536,6 +536,9 @@ iframe {
   .icon-box {
     padding-left: 5rem;
   }
+  .content {
+    height: 220rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -570,6 +573,13 @@ iframe {
     position: relative;
     top: -1vh;
     right: -50vw;
+  }
+  .content {
+    height: 200rem;
+  }
+
+  .rss-feed {
+    top: -27vh;
   }
 }
 
