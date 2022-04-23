@@ -235,6 +235,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   width: 90%;
+  overflow: hidden !important;
 }
 
 .rss-feed {
@@ -261,6 +262,72 @@ iframe {
   color: white;
   text-shadow: 0px 0px 17px rgb(235, 26, 207);
 }
+
+.price-container {
+  width: 96vw;
+  position: sticky;
+  left: 1.5vw;
+  top: 10vh;
+  overflow: hidden;
+}
+
+.price-box {
+  display: sticky;
+  position: relative;
+  width: auto;
+  height: 12rem;
+  /* background: white; */
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 45rem;
+  animation: scrolling 30s linear infinite;
+}
+
+@keyframes scrolling {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(100%);
+  }
+}
+
+.negative-price {
+  color: red;
+}
+.positive-price {
+  color: green;
+}
+
+.currency-id {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+}
+.price-styling {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  z-index: 2;
+  font-family: "Montserrat";
+}
+
+.box-styling {
+  /* border: 2px solid red; */
+}
+
+.change-styling {
+  font-size: 3rem;
+  z-index: 2;
+  font-family: "Montserrat";
+}
+
 /* |Front page|  End */
 /*                   */
 /* |Footer Start|    */
