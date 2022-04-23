@@ -523,6 +523,10 @@ iframe {
     gap: 2rem;
     top: 45vh;
   }
+  .price-box {
+    animation: scrolling 20s linear infinite;
+    gap: 35rem;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -640,6 +644,10 @@ iframe {
   .icon-box {
     padding-left: 3rem;
   }
+  .price-box {
+    animation: scrolling 10s linear infinite;
+    gap: 25rem;
+  }
 }
 
 @media (max-width: 562px) {
@@ -661,10 +669,26 @@ iframe {
   .content {
     height: 200rem;
   }
-
+  .price-box {
+    animation: scrolling 20s linear infinite;
+    gap: 3rem;
+  }
+  .price-styling {
+    font-size: 5vw;
+  }
+  .change-styling {
+    font-size: 5vw;
+  }
+  .currency-id {
+    font-size: 5vw;
+  }
   .rss-feed {
     top: -27vh;
-    width: 90%;
+    width: 70%;
+  }
+  .news-title {
+    left: 3vw;
+    font-size: 10vw;
   }
 }
 
