@@ -1,6 +1,7 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap");
 
 /* Setting defaults */
 
@@ -225,126 +226,166 @@ button:hover {
 /* |Front page|  Start */
 
 .content {
-  height: 200rem;
+  min-height: 380rem;
   position: relative;
+  background-color: black;
   color: white;
   font-size: 2.5vw;
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Turret Road", cursive;
   font-weight: 500;
+}
+
+.page-title {
+  position: relative;
+  top: 15rem;
+  left: 21%;
+  text-shadow: 3px 3px 3px rgb(255, 0, 0);
+  display: inline-block;
+}
+
+.content-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  top: 40rem;
+  height: auto;
+  width: 90vw;
+  left: 4vw;
+  gap: 5rem;
+}
+
+.description-box {
+  min-height: 50rem;
+  width: 90vw;
+  left: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  overflow: hidden !important;
+  box-shadow: 0px 0px 15px rgb(92, 14, 238);
+  border-radius: 20px;
+  padding: 7rem 7rem;
 }
 
-.rss-feed {
-  display: flex;
+.author {
   position: relative;
-  top: -20vh;
-  left: 4.5vw;
-  width: 70%;
-  height: 100rem;
-  border-radius: 3rem;
-}
-
-iframe {
-  box-shadow: 0px 0px 25px rgb(235, 26, 207);
-}
-
-.news-title {
-  display: inline-block;
-  position: relative;
-  top: 15rem;
-  left: 15vw;
-  font-size: 7vw;
-  font-family: "Montserrat";
-  color: white;
-  text-shadow: 0px 0px 17px rgb(235, 26, 207);
-}
-
-.logo-size {
-  position: relative;
-  width: 50px;
-}
-
-.price-container {
-  width: 96vw;
-  position: sticky;
-  left: 1.5vw;
-  top: 15vh;
+  min-width: 90vw;
+  height: 40rem;
+  box-shadow: 0px 0px 15px rgb(92, 14, 238);
+  border-radius: 20px;
   overflow: hidden;
 }
 
-.price-box {
-  display: sticky;
+.author-text {
+  position: absolute;
+  width: 90vw;
+  height: 10rem;
+  font-size: 2.9vw;
+  left: 3vw;
+  top: 7vw;
+}
+
+.donate-box {
   position: relative;
-  width: auto;
-  height: 12rem;
-  /* background: white; */
-  /* border: 2px solid red; */
+  top: 30rem;
+  width: 90vw;
+  height: 5vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.wallet-id {
+  height: 5rem;
+  width: 40vw;
+  font-size: 1.5vw;
+  color: white;
+  background: black;
+  border: transparent;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 15px rgb(92, 14, 238);
+  padding: 0.5rem 0.5rem;
+}
+
+.copy {
+  font-size: 1.5vw;
+  color: white;
+  background: black;
+  border: rgb(92, 14, 238);
+  border-radius: 1.3rem;
+  box-shadow: 0px 0px 15px rgb(92, 14, 238);
+  padding: 0.8rem 0.8rem;
+  cursor: pointer;
+}
+.copy:hover {
+  background: rgb(92, 14, 238);
+}
+
+.main-text {
+  color: rgb(204, 195, 195);
+  font-size: 3vw;
+  font-family: "Montserrat";
+}
+
+.image-1 {
+  float: right;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-2 {
+  float: left;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features {
+  min-height: 10rem;
+  left: 5vw;
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  gap: 45rem;
-  animation: scrolling 30s linear infinite;
+  box-shadow: 0px 0px 15px rgb(92, 14, 238);
+  border-radius: 20px;
 }
 
-@keyframes scrolling {
-  from {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(-100%);
-  }
-  to {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(100%);
-  }
+.features:hover {
+  background: rgba(92, 14, 238, 0.4);
 }
 
-.negative-price {
-  color: red;
-}
-.positive-price {
-  color: green;
-}
-
-.currency-id {
-  font-size: 2.5rem;
-  color: rgb(255, 255, 255);
-  font-family: "Montserrat";
-}
-.price-styling {
-  color: rgb(255, 255, 255);
-  font-size: 3rem;
-  z-index: 2;
-  font-family: "Montserrat";
-}
-.price1 {
-  font-size: 2.9rem;
+.cta-tutorial {
+  font-size: 2.5vw;
+  font-family: "Turret Road", cursive;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
 }
 
-.box-styling {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  /* border: 2px solid red; */
+.author {
+  max-width: 20vw;
 }
 
-.inner-box-styling {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.tutorial {
+  position: relative;
+  padding: 1.5rem;
+  cursor: pointer;
+  max-width: 20vw;
 }
 
-.change-styling {
-  font-size: 3rem;
-  z-index: 2;
-  font-family: "Montserrat";
+.tutorial:hover {
+  text-shadow: 0px 0px 20px white;
+}
+
+.description {
+  font-size: 1.7vw;
+  max-width: 20vw;
 }
 
 /* |Front page|  End */
@@ -353,7 +394,7 @@ iframe {
 
 .footer-content {
   height: 100rem;
-  background-image: url("../img/chart.png");
+  background-image: url("../../../../img/chart.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -526,9 +567,8 @@ iframe {
     gap: 2rem;
     top: 45vh;
   }
-  .price-box {
-    animation: scrolling 20s linear infinite;
-    gap: 35rem;
+  .content {
+    min-height: 320rem;
   }
 }
 
@@ -547,6 +587,9 @@ iframe {
 @media (max-width: 1220px) {
   .nav-links li {
     padding: 0rem 0.6rem;
+  }
+  .content {
+    min-height: 270rem;
   }
 }
 
@@ -590,7 +633,6 @@ iframe {
   }
   .cflogo {
     width: 7rem;
-    padding-bottom: 1rem;
   }
   .cta1,
   button {
@@ -607,6 +649,32 @@ iframe {
     position: static;
     visibility: visible;
     display: initial;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sol-wallet {
+    left: 8vw;
+    top: 20.5rem;
+  }
+
+  .wallet-id {
+    top: 20rem;
+    left: 16vw;
+  }
+
+  .copy {
+    left: 57vw;
+    top: 20rem;
+  }
+  .author {
+    height: 30rem;
+  }
+  .wallet-id {
+    height: 3rem;
+  }
+  .donate-box {
+    top: 18rem;
   }
 }
 
@@ -628,7 +696,7 @@ iframe {
     padding-left: 5rem;
   }
   .content {
-    height: 220rem;
+    min-height: 240rem;
   }
 }
 
@@ -641,15 +709,54 @@ iframe {
     left: 20%;
     font-size: 3.5vw;
   }
+  .description {
+    font-size: 2vw;
+    max-width: ;
+  }
+  .description-box {
+    width: 90vw;
+    left: 5vw;
+    padding: 4rem 4rem;
+  }
 }
 
 @media (max-width: 700px) {
   .icon-box {
     padding-left: 3rem;
   }
-  .price-box {
-    animation: scrolling 10s linear infinite;
-    gap: 25rem;
+  .author {
+    font-size: 3vw;
+  }
+  .content {
+    min-height: 190rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .sol-wallet {
+    left: 2vw;
+    top: 14rem;
+    font-size: 3vw;
+  }
+  .wallet-id {
+    top: 13rem;
+    left: 16vw;
+  }
+  .copy {
+    left: 57vw;
+    top: 13.5rem;
+  }
+  .author {
+    height: 20rem;
+  }
+  .wallet-id {
+    height: 3rem;
+  }
+  .author-text {
+    font-size: 3.3vw;
+  }
+  .donate-box {
+    top: 13rem;
   }
 }
 
@@ -661,37 +768,51 @@ iframe {
   .icon-box {
     padding-left: 1rem;
   }
+  .content-container {
+    top: 30rem;
+    left: 5vw;
+  }
 }
 
 @media (max-width: 500px) {
   .hamburger {
     position: relative;
-    top: -1vh;
     right: -50vw;
   }
+  .tutorial {
+    font-size: 3vw;
+  }
+  .description {
+    font-size: 2.8vw;
+  }
+  .description-box {
+    width: 90vw;
+    left: 5vw;
+    padding: 2rem 2rem;
+  }
+  .main-text {
+    font-size: 5vw;
+  }
+  .image-1 {
+    width: 40%;
+  }
+  .image-2 {
+    width: 40%;
+  }
+  .author-text {
+    font-size: 4.5vw;
+  }
+  .sol-wallet {
+    font-size: 4vw;
+  }
+  .wallet-id {
+    font-size: 3vw;
+  }
+  .copy {
+    font-size: 3vw;
+  }
   .content {
-    height: 200rem;
-  }
-  .price-box {
-    animation: scrolling 20s linear infinite;
-    gap: 3rem;
-  }
-  .price-styling {
-    font-size: 5vw;
-  }
-  .change-styling {
-    font-size: 5vw;
-  }
-  .currency-id {
-    font-size: 5vw;
-  }
-  .rss-feed {
-    top: -27vh;
-    width: 70%;
-  }
-  .news-title {
-    left: 3vw;
-    font-size: 10vw;
+    min-height: 240rem;
   }
 }
 
@@ -699,6 +820,15 @@ iframe {
   .hamburger {
     position: relative;
     right: -55vw;
+  }
+  .description {
+    font-size: 2.9vw;
+  }
+  .tutorial {
+    font-size: 2.9vw;
+  }
+  .content {
+    min-height: 220rem;
   }
 }
 
