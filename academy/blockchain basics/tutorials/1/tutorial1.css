@@ -285,17 +285,19 @@ button:hover {
   top: 7vw;
 }
 
-.sol-wallet {
-  position: absolute;
-  left: 8vw;
+.donate-box {
+  position: relative;
   top: 30rem;
+  width: 90vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .wallet-id {
-  position: absolute;
   height: 5rem;
-  top: 30rem;
-  left: 16vw;
   width: 40vw;
   font-size: 1.5vw;
   color: white;
@@ -307,9 +309,6 @@ button:hover {
 }
 
 .copy {
-  position: absolute;
-  left: 57vw;
-  top: 30rem;
   font-size: 1.5vw;
   color: white;
   background: black;
@@ -568,9 +567,6 @@ button:hover {
     gap: 2rem;
     top: 45vh;
   }
-  .wallet-id {
-    height: 3.5rem;
-  }
 }
 
 @media (max-width: 1300px) {
@@ -671,6 +667,9 @@ button:hover {
   .wallet-id {
     height: 3rem;
   }
+  .donate-box {
+    top: 18rem;
+  }
 }
 
 @media (max-width: 950px) {
@@ -730,12 +729,10 @@ button:hover {
     top: 14rem;
     font-size: 3vw;
   }
-
   .wallet-id {
     top: 13rem;
     left: 16vw;
   }
-
   .copy {
     left: 57vw;
     top: 13.5rem;
@@ -748,6 +745,9 @@ button:hover {
   }
   .author-text {
     font-size: 3.3vw;
+  }
+  .donate-box {
+    top: 13rem;
   }
 }
 
@@ -789,6 +789,18 @@ button:hover {
   }
   .image-2 {
     width: 40%;
+  }
+  .author-text {
+    font-size: 4.5vw;
+  }
+  .sol-wallet {
+    font-size: 4vw;
+  }
+  .wallet-id {
+    font-size: 3vw;
+  }
+  .copy {
+    font-size: 3vw;
   }
 }
 
