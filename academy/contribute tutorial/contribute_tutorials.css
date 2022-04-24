@@ -237,10 +237,13 @@ button:hover {
 }
 
 .page-title {
-  position: relative;
-  top: 15rem;
-  left: 30vw;
   text-shadow: 3px 3px 3px rgb(255, 0, 0);
+  font-size: 3.2vw;
+  width: 100%;
+  left: 1vw;
+  position: relative;
+  cursor: pointer;
+  padding: 3rem;
 }
 
 .content-container {
@@ -248,7 +251,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  top: 40rem;
+  top: 40rem !important;
   height: auto;
   width: 90vw;
   left: 2.5vw;
@@ -288,7 +291,7 @@ button:hover {
   left: 5vw;
   width: 90vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   box-shadow: 0px 0px 15px rgb(92, 14, 238);
@@ -567,7 +570,6 @@ button:hover {
   .cflogo {
     width: 7rem;
   }
-  .cta1,
   button {
     visibility: hidden;
   }
