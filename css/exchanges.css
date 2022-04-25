@@ -541,6 +541,7 @@ button:hover {
   font-family: "Montserrat";
   left: 12vw;
   top: 2rem;
+  display: inline-block;
 }
 
 .metamask-subheader {
@@ -583,6 +584,7 @@ button:hover {
   font-family: "Montserrat";
   left: 12vw;
   top: 2rem;
+  display: inline-block;
 }
 
 .phantom-subheader {
@@ -625,6 +627,7 @@ button:hover {
   font-family: "Montserrat";
   left: 16vw;
   top: 2rem;
+  display: inline-block;
 }
 
 .trezor-subheader {
