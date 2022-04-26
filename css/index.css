@@ -981,14 +981,30 @@ footer {
   font-size: 3vw;
   font-family: "Montserrat", sans-serif;
 }
+
+.footer-links {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 50vw;
+  left: 60vw;
+  top: 75rem;
+}
+.privacy {
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 500;
+  font-size: 1.25vw;
+}
+
 .copyright {
   color: white;
   font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
   font-size: 1.25vw;
-  position: relative;
-  bottom: -85rem;
-  left: 70vw;
 }
 .footer-icon {
   color: white;
@@ -1363,6 +1379,9 @@ footer {
   .icon-box {
     padding-left: 5rem;
   }
+  .footer-links {
+    top: 25vh;
+  }
 }
 
 @media (max-width: 850px) {
@@ -1498,8 +1517,15 @@ footer {
     left: 35%;
     font-size: 1.8vw;
   }
+  .privacy {
+    font-size: 1.8vw;
+  }
   .icon-box {
     padding-left: 1rem;
+  }
+  .footer-links {
+    left: 50vw;
+    gap: 1rem;
   }
 }
 
