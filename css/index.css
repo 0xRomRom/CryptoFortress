@@ -990,10 +990,11 @@ footer {
   flex-direction: column;
   gap: 3rem;
   width: 50vw;
-  left: 60vw;
-  top: 75rem;
+  left: 50vw;
+  top: 78rem;
 }
 .privacy {
+  position: relative;
   color: white;
   font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
@@ -1005,6 +1006,7 @@ footer {
   font-family: "Press Start 2P", sans-serif;
   font-weight: 500;
   font-size: 1.25vw;
+  display: inline-block;
 }
 .footer-icon {
   color: white;
@@ -1336,6 +1338,9 @@ footer {
     position: relative;
     top: 15vh;
     left: -30vw;
+  }
+  .footer-links {
+    gap: 1rem;
   }
 }
 

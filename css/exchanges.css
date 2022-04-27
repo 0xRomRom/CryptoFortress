@@ -267,6 +267,29 @@ button:hover {
   font-family: "Montserrat";
 }
 
+.token-search {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 15vw;
+  height: 20vh;
+  background: red;
+  left: 70vw;
+  border: 2px solid white;
+  border-radius: 2rem;
+}
+
+.token-search-span {
+  width: 80%;
+  position: relative;
+}
+.token-search-href {
+  width: 80%;
+  position: relative;
+}
+
 /*Modal 1*/
 .exchange1 {
   position: relative;
@@ -989,6 +1012,12 @@ button:hover {
 @media (max-width: 700px) {
   .icon-box {
     padding-left: 3rem;
+  }
+  .token-search {
+    height: 10vh;
+  }
+  .size-decrease {
+    font-size: 1.75vw;
   }
 }
 
