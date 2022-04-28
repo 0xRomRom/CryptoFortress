@@ -25,7 +25,9 @@ hamburger.addEventListener("click", () => {
 
 const result = (name, image, rank, ticker) => {
   coinName.insertAdjacentHTML("beforeend", name);
-  coinRank.insertAdjacentHTML("beforeend", rank);
+  rank === null
+    ? coinRank.insertAdjacentHTML("beforeend", "Unranked")
+    : coinRank.insertAdjacentHTML("beforeend", rank);
   coinTicker.insertAdjacentHTML("beforeend", ticker);
   coinImage.src = image;
   searchButton.disabled = true;
@@ -40,16 +42,14 @@ const result = (name, image, rank, ticker) => {
 };
 
 searchButton.addEventListener("click", () => {
-  let value;
-
   const renderResult = function (blockchain, address) {
     fetch(
       `https://api.coingecko.com/api/v3/coins/${blockchain}/contract/${address}`
     )
-      .then(function (response) {
+      .then((response) => {
         return response.json();
       })
-      .then(function (data) {
+      .then((data) => {
         console.log(data);
         result(data.name, data.image.small, data.market_cap_rank, data.symbol);
       });
