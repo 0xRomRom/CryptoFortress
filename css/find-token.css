@@ -235,7 +235,7 @@ button:hover {
   display: flex;
 }
 .page-title {
-  position: relative;
+  position: absolute;
   top: 20rem;
   left: 25vw;
   font-family: "Montserrat";
@@ -247,8 +247,8 @@ button:hover {
   height: 50vh;
   width: 25vw;
   top: 40rem;
-  left: 20vw;
-  background: green;
+  left: 16vw;
+  background: linear-gradient(90deg, #c33764, #1d2671);
   border-radius: 3rem;
   display: flex;
   justify-content: center;
@@ -256,65 +256,122 @@ button:hover {
   flex-direction: column;
   gap: 4rem;
   overflow: hidden;
-  border: 2px solid white;
 }
 
 .search-button {
   font-family: "Montserrat";
-  padding: 1rem 1.5rem;
+  font-size: 1vw;
   border-radius: 0.5rem;
   border: 2px solid black;
+  border-radius: 1rem;
   cursor: pointer;
+  background: transparent;
+  color: white;
+  position: relative;
+  width: 8vw;
+  min-height: 5rem;
+}
+
+.btn-bg {
+  background: linear-gradient(90deg, black, #1d2671);
+}
+
+.search-button:hover {
+  box-shadow: 0px 0px 10px black;
 }
 
 .reset-button {
-  margin-top: -1rem;
   font-family: "Montserrat";
-  padding: 1rem 1.5rem;
+  font-size: 1vw;
   border-radius: 0.5rem;
   border: 2px solid black;
   cursor: pointer;
+  border-radius: 1rem;
+  color: white;
+  background: linear-gradient(90deg, black, #1d2671);
+  position: relative;
+  width: 8vw;
+  min-height: 5rem;
+}
+
+.reset-button:hover {
+  box-shadow: 0px 0px 10px black;
 }
 
 .address-input {
   font-family: "Montserrat";
+  outline: none;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem 1.2rem;
+  background: transparent;
+  color: black;
 }
+
+.address-input:hover {
+  box-shadow: 0px 0px 10px black;
+}
+
+.address-input::placeholder {
+  color: black;
+}
+
 .input-title {
   font-family: "Montserrat";
   font-size: 2.5vw;
+  text-shadow: 0px 0px 10px black;
 }
 
 .blockchains {
   position: relative;
-  width: 10vw;
-  background: rgb(255, 255, 255);
-  border: transparent;
+  min-width: 10vw;
   font-family: "Montserrat";
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 1rem;
+}
+
+.blockchains:hover {
+  box-shadow: 0px 0px 10px black;
 }
 
 .output-box {
-  position: relative;
+  position: absolute;
   height: 50vh;
   width: 25vw;
   top: 40rem;
-  left: 10vw;
-  background: rgb(93, 19, 203);
+  left: 59vw;
+  background: linear-gradient(90deg, #1d2671, #c33764);
   border-radius: 3rem;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   gap: 2rem;
-  padding-left: 3rem;
   overflow: hidden;
-  border: 2px solid white;
 }
+
+.box-shadow {
+  box-shadow: 0px 0px 10px white;
+  animation: glowing1 1s ease-in-out infinite alternate;
+}
+
+@keyframes glowing1 {
+  from {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  to {
+    box-shadow: 0 0 15px rgb(151, 42, 228);
+  }
+}
+
 .question-mark {
-  position: relative;
-  left: 8.5vw;
   font-size: 7vw;
   font-family: "Montserrat";
   transition: all 1s ease-in-out;
+  text-shadow: 0px 0px 10px black;
 }
 
 .question-text {
@@ -322,35 +379,40 @@ button:hover {
   left: 1vw;
   font-size: 2vw;
   font-family: "Montserrat";
+  text-shadow: 0px 0px 10px black;
 }
 .output-title {
   position: relative;
   font-family: "Montserrat";
   font-size: 2.5vw;
   padding-bottom: 3rem;
+  text-shadow: 0px 0px 10px black;
 }
 
 .coin-name {
   font-family: "Montserrat";
   font-size: 1.75vw;
+  text-shadow: 0px 0px 10px black;
 }
 
 .coin-image {
-  position: relative;
-  left: 4vw;
+  position: absolute;
+  left: 75vw;
   top: 42rem;
-  width: 4vw;
+  width: 9rem;
   height: 9rem;
 }
 
 .coin-rank {
   font-family: "Montserrat";
   font-size: 2vw;
+  text-shadow: 0px 0px 10px black;
 }
 
 .coin-ticker {
   font-family: "Montserrat";
   font-size: 2vw;
+  text-shadow: 0px 0px 10px black;
 }
 
 /* |Front page|  End */
@@ -612,6 +674,57 @@ button:hover {
   }
 }
 
+@media (max-width: 1000px) {
+  .input-box {
+    top: 32rem;
+    width: 70vw;
+    left: 15vw;
+  }
+  .input-title {
+    font-size: 5vw;
+  }
+  .question-text {
+    font-size: 3vw;
+  }
+  .coin-image {
+    top: 95rem;
+    left: 20vw;
+  }
+  .coin-name {
+    font-size: 5vw;
+  }
+  .page-title {
+    font-size: 6vw;
+    left: 8vw;
+    top: 12vh;
+  }
+  .coin-rank {
+    font-size: 6vw;
+  }
+  .coin-ticker {
+    font-size: 6vw;
+  }
+  .output-box {
+    top: 92rem;
+    width: 70vw;
+    left: 15vw;
+  }
+  .output-title {
+    font-size: 7vw;
+  }
+  .content {
+    height: 120rem;
+  }
+  .search-button {
+    width: 20vw;
+    font-size: 3vw;
+  }
+  .reset-button {
+    width: 20vw;
+    font-size: 3vw;
+  }
+}
+
 @media (max-width: 950px) {
   .bottom-container {
     left: 5vw;
@@ -628,6 +741,9 @@ button:hover {
   }
   .icon-box {
     padding-left: 5rem;
+  }
+  .content {
+    height: 160rem;
   }
 }
 
@@ -663,6 +779,26 @@ button:hover {
     position: relative;
     top: -1vh;
     right: -50vw;
+  }
+  .search-button {
+    width: 30vw;
+  }
+  .reset-button {
+    width: 30vw;
+  }
+  .input-box {
+    top: 20vh;
+  }
+  .output-box {
+    top: 75vh;
+  }
+  .coin-image {
+    width: 20%;
+    top: 77vh;
+    left: 61vw;
+  }
+  .content {
+    height: 120rem;
   }
 }
 

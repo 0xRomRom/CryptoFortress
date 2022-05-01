@@ -15,6 +15,7 @@ const coinTicker = document.querySelector(".coin-ticker");
 const questionMark = document.querySelector(".question-mark");
 const questionText = document.querySelector(".question-text");
 const outputTitle = document.querySelector(".output-title");
+const outputBox = document.querySelector(".output-box");
 
 //Burger menu for mobile
 hamburger.addEventListener("click", () => {
@@ -31,6 +32,9 @@ const result = (name, image, rank, ticker) => {
   coinTicker.insertAdjacentHTML("beforeend", ticker);
   coinImage.src = image;
   searchButton.disabled = true;
+  searchButton.style.pointerEvents = "none";
+  searchButton.classList.remove("btn-bg");
+  searchButton.style.color = "black";
   coinName.classList.remove("hidden");
   coinRank.classList.remove("hidden");
   coinTicker.classList.remove("hidden");
@@ -39,9 +43,11 @@ const result = (name, image, rank, ticker) => {
   questionText.classList.add("hidden");
   searchButton.style.cursor = "initial";
   outputTitle.classList.remove("hidden");
+  outputBox.classList.add("box-shadow");
 };
 
 searchButton.addEventListener("click", () => {
+  let value;
   const renderResult = function (blockchain, address) {
     fetch(
       `https://api.coingecko.com/api/v3/coins/${blockchain}/contract/${address}`
@@ -54,7 +60,6 @@ searchButton.addEventListener("click", () => {
         result(data.name, data.image.small, data.market_cap_rank, data.symbol);
       });
   };
-  // console.log(blockchainOptions.value);
   value = addressInput.value;
   renderResult(blockchainOptions.value, value);
 });
@@ -72,8 +77,12 @@ resetButton.addEventListener("click", () => {
   outputTitle.classList.add("hidden");
   questionMark.classList.remove("hidden");
   searchButton.disabled = false;
+  searchButton.style.pointerEvents = "initial";
+  searchButton.classList.add("btn-bg");
+  searchButton.style.color = "white";
   searchButton.style.cursor = "pointer";
   questionText.classList.remove("hidden");
+  outputBox.classList.remove("box-shadow");
 });
 
 (function () {
@@ -82,33 +91,5 @@ resetButton.addEventListener("click", () => {
     const randomNum2 = Math.trunc(Math.random() * 255 + 1);
     const randomNum3 = Math.trunc(Math.random() * 255 + 1);
     questionMark.style.color = `rgb(${randomNum1}, ${randomNum2}, ${randomNum3})`;
-    questionMark.style.color = `rgb(${randomNum1}, ${randomNum2}, ${randomNum3})`;
-    questionMark.style.color = `rgb(${randomNum1}, ${randomNum2}, ${randomNum3})`;
   }, 1000);
 })();
-
-// const renderBitcoin = function (price, change) {
-//   const prices = `
-//   ${price}
-//     `;
-//   const changes = `${change > 0 ? "+" : ""}${change}`;
-//   price1.insertAdjacentHTML("beforeend", prices);
-//   change1.insertAdjacentHTML("afterbegin", changes);
-//   change >= 0 ? (change1.style.color = "green") : (change1.style.color = "red");
-// };
-
-// const render1 = function (coin) {
-//   fetch(
-//     `https://api.coingecko.com/api/v3/simple/price?ids=${coin}&vs_currencies=usd&include_24hr_change=true`
-//   )
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       renderBitcoin(
-//         +data.bitcoin.usd.toFixed(0),
-//         +data.bitcoin.usd_24h_change.toFixed(2)
-//       );
-//     });
-// };
-// render1("bitcoin");
