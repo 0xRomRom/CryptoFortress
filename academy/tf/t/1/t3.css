@@ -226,7 +226,7 @@ button:hover {
 /* |Front page|  Start */
 
 .content {
-  min-height: 270rem;
+  min-height: 200rem;
   position: relative;
   background-color: black;
   color: white;
@@ -238,7 +238,7 @@ button:hover {
 .page-title {
   position: relative;
   top: 15rem;
-  left: 21%;
+  left: 31%;
   text-shadow: 3px 3px 3px rgb(255, 0, 0);
   display: inline-block;
 }
@@ -329,7 +329,9 @@ button:hover {
 }
 
 .image-1 {
-  float: right;
+  position: absolute;
+  top: 40vh;
+  left: 60vw;
   width: 30%;
   display: flex;
   justify-content: center;
@@ -527,6 +529,14 @@ button:hover {
   }
 }
 
+.span-red {
+  color: red;
+}
+
+.span-green {
+  color: green;
+}
+
 /* Media Queries */
 
 @media (max-width: 1810px) {
@@ -567,8 +577,8 @@ button:hover {
     gap: 2rem;
     top: 45vh;
   }
-  .content {
-    min-height: 320rem;
+  .wallet-id {
+    height: 3.5rem;
   }
 }
 
@@ -582,14 +592,14 @@ button:hover {
   .icon-box {
     padding-left: 8rem;
   }
+  .image-1 {
+    top: 30vh;
+  }
 }
 
 @media (max-width: 1220px) {
   .nav-links li {
     padding: 0rem 0.6rem;
-  }
-  .content {
-    min-height: 270rem;
   }
 }
 
@@ -696,7 +706,7 @@ button:hover {
     padding-left: 5rem;
   }
   .content {
-    min-height: 240rem;
+    min-height: 140rem;
   }
 }
 
@@ -726,9 +736,6 @@ button:hover {
   }
   .author {
     font-size: 3vw;
-  }
-  .content {
-    min-height: 190rem;
   }
 }
 
@@ -811,8 +818,11 @@ button:hover {
   .copy {
     font-size: 3vw;
   }
+  .image-1 {
+    display: none;
+  }
   .content {
-    min-height: 240rem;
+    min-height: 170rem;
   }
 }
 
@@ -826,9 +836,6 @@ button:hover {
   }
   .tutorial {
     font-size: 2.9vw;
-  }
-  .content {
-    min-height: 220rem;
   }
 }
 

@@ -224,9 +224,13 @@ button:hover {
 /* |Front page| Nav-bar Section End */
 
 /* |Front page|  Start */
-
+.ex-href {
+  font-family: "Turret Road", cursive;
+  font-size: 2.5vw;
+  font-weight: 200;
+}
 .content {
-  min-height: 270rem;
+  min-height: 215rem;
   position: relative;
   background-color: black;
   color: white;
@@ -238,7 +242,7 @@ button:hover {
 .page-title {
   position: relative;
   top: 15rem;
-  left: 21%;
+  left: 28%;
   text-shadow: 3px 3px 3px rgb(255, 0, 0);
   display: inline-block;
 }
@@ -527,6 +531,14 @@ button:hover {
   }
 }
 
+.span-red {
+  color: red;
+}
+
+.span-green {
+  color: green;
+}
+
 /* Media Queries */
 
 @media (max-width: 1810px) {
@@ -567,8 +579,8 @@ button:hover {
     gap: 2rem;
     top: 45vh;
   }
-  .content {
-    min-height: 320rem;
+  .wallet-id {
+    height: 3.5rem;
   }
 }
 
@@ -587,9 +599,6 @@ button:hover {
 @media (max-width: 1220px) {
   .nav-links li {
     padding: 0rem 0.6rem;
-  }
-  .content {
-    min-height: 270rem;
   }
 }
 
@@ -676,6 +685,9 @@ button:hover {
   .donate-box {
     top: 18rem;
   }
+  .content {
+    min-height: 170rem !important;
+  }
 }
 
 @media (max-width: 950px) {
@@ -696,7 +708,7 @@ button:hover {
     padding-left: 5rem;
   }
   .content {
-    min-height: 240rem;
+    min-height: 140rem;
   }
 }
 
@@ -726,9 +738,6 @@ button:hover {
   }
   .author {
     font-size: 3vw;
-  }
-  .content {
-    min-height: 190rem;
   }
 }
 
@@ -812,7 +821,7 @@ button:hover {
     font-size: 3vw;
   }
   .content {
-    min-height: 240rem;
+    height: 240rem !important;
   }
 }
 
@@ -828,7 +837,7 @@ button:hover {
     font-size: 2.9vw;
   }
   .content {
-    min-height: 220rem;
+    height: 200rem !important;
   }
 }
 

@@ -238,7 +238,7 @@ button:hover {
 .page-title {
   position: relative;
   top: 15rem;
-  left: 25%;
+  left: 31%;
   text-shadow: 3px 3px 3px rgb(255, 0, 0);
   display: inline-block;
 }
@@ -324,7 +324,7 @@ button:hover {
 
 .main-text {
   color: rgb(204, 195, 195);
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: "Montserrat";
 }
 
@@ -525,6 +525,14 @@ button:hover {
   100% {
     color: white;
   }
+}
+
+.span-red {
+  color: red;
+}
+
+.span-green {
+  color: green;
 }
 
 /* Media Queries */
