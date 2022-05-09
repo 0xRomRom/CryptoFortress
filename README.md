@@ -1,4 +1,4 @@
 # CryptoFortress
-## A crypto community website. 
+## A crypto community promotional website. 
 
 ## Check it out: www.cryptofortress.io
