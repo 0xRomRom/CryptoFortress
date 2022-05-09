@@ -3,4 +3,4 @@ Crypto Fortress's Codebase
 
 A crypto community website. 
 
-## Check it out: cryptofortress.io
+## Check it out: www.cryptofortress.io
