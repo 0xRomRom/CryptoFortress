@@ -2,7 +2,7 @@
 
 ## Promotional website for a discord based crypto community.
 
-#
+
 
 ## Features
 
@@ -12,7 +12,7 @@
 - Multi purpose (educational, promotional, affiliate)
 - Potential reward system for content creators
 
-#
+
 
 ## Tech
 
