@@ -225,7 +225,7 @@ button:hover {
 /* |Front page|  Start */
 
 .content {
-  height: 200rem;
+  height: 600rem;
   position: relative;
   color: white;
   font-size: 2.5vw;
@@ -240,12 +240,13 @@ button:hover {
 
 .rss-feed {
   display: flex;
-  position: relative;
-  top: -20vh;
-  left: 4.5vw;
+  position: absolute;
+  top: 30rem;
+  left: 30%;
   width: 70%;
-  height: 100rem;
+  height: 150rem;
   border-radius: 3rem;
+  font-family: "Montserrat";
 }
 
 iframe {
